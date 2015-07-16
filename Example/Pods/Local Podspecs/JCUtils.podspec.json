@@ -1,0 +1,25 @@
+{
+  "name": "JCUtils",
+  "version": "0.1.0",
+  "summary": "A short description of JCUtils.",
+  "description": "                       An optional longer description of JCUtils\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/JCUtils",
+  "license": "MIT",
+  "authors": {
+    "Justin Cockburn": "jusco@seas.upenn.edu"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/JCUtils.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "JCUtils": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module JCUtils {
+  umbrella header "Pods-JCUtils_Example-JCUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

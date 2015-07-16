@@ -10,18 +10,15 @@
 Pod::Spec.new do |s|
   s.name             = "JCUtils"
   s.version          = "0.1.0"
-  s.summary          = "A short description of JCUtils."
+  s.summary          = "Utilities often used in applications."
   s.description      = <<-DESC
-                       An optional longer description of JCUtils
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+						Contains Date Formatters, Animation Helpers and the like
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JCUtils"
+  s.homepage         = "https://github.com/jusco/JCUtils"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Justin Cockburn" => "jusco@seas.upenn.edu" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JCUtils.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/jusco/JCUtils.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
@@ -35,4 +32,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  # 
 end

@@ -1,0 +1,1802 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000D1BDDBCC20689385F6F23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336B764B83BE5835BA431CB /* Foundation.framework */; };
+		00A14AAE0C386ACFA24A5374 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E7CCECC254C8B73961DC193 /* EXPMatchers+beLessThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		028038F96C45D8025E4B10E8 /* EXPMatchers+beginWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 86BC59BD7A920438FB368A40 /* EXPMatchers+beginWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0547BCBE2617689D10100AA7 /* EXPDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D0F9EBDA317EC2B78ECB7709 /* EXPDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		060B80F326B4BD8E8B26F083 /* EXPMatchers+beKindOf.h in Headers */ = {isa = PBXBuildFile; fileRef = D087EA7A0B80AA12ECF2DE0F /* EXPMatchers+beKindOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06517460A0D18335692162A0 /* SPTSharedExampleGroups.h in Headers */ = {isa = PBXBuildFile; fileRef = D87DAA8977962018BAAE5720 /* SPTSharedExampleGroups.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A95780FB72E2D77C1825D10 /* EXPMatchers+beTruthy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1888C2C9384DB00CA6891D33 /* EXPMatchers+beTruthy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0FB099C683B66B73A6173C9D /* SpectaDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = BEDF2A9354DEAB1E9457D911 /* SpectaDSL.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		103BEBC0FC62FE01EC7A41C7 /* NSValue+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E62BB37E0C0D35A95C660C0 /* NSValue+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12D680D0B961F135690796AF /* Pods-JCUtils_Tests-Specta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B91CEA40EF4903ABA0900BA /* Pods-JCUtils_Tests-Specta-dummy.m */; };
+		16F5F28B75C43F5F77EBEFD8 /* SPTSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 16CD93C07F21AC72AF568BC1 /* SPTSpec.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1976A36CD6558F7929A4A94B /* SPTCompiledExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 416DEE0C4B047E7ABA35C129 /* SPTCompiledExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1B0D445CBDA7D883384E82C2 /* SPTCallSite.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F907B9277DA78770A47A141 /* SPTCallSite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1BA8828AF8B0D6A4D3545213 /* EXPMatchers+match.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B6A738BF25125F39B466A3 /* EXPMatchers+match.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1CBAF2B9A3DF29A6346376A7 /* EXPMatchers+beNil.h in Headers */ = {isa = PBXBuildFile; fileRef = AA88193F75E0BA67C7BCF8C0 /* EXPMatchers+beNil.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1DBB45A29D0F0D95AB5C09EB /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20610B7FCB4B512E09FC5045 /* XCTest.framework */; };
+		1F4EBDA72B64C2409855998E /* Pods-JCUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F39FF0CA43FC13860477F2D6 /* Pods-JCUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		202E7093AC099FDCEF16071B /* EXPBlockDefinedMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = FF2EC6E6C516CC5BC4FA9B62 /* EXPBlockDefinedMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20394E45137C2C102D68D096 /* EXPFloatTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 6982ECDBBC3F6D0560FAD55F /* EXPFloatTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		227392526C6761841B5C1AB6 /* EXPMatchers+raiseWithReason.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B8B7F4FB7DB8E780D9916B /* EXPMatchers+raiseWithReason.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		22B45EB4F24839550AA411F7 /* Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = C932771EFA6A0227C1F3F361 /* Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		25A93CC77114EBBC4FEB4ABE /* EXPDoubleTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = 582E6DF60CBF267F499045AD /* EXPDoubleTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2764CB4D23525884456198F0 /* EXPFloatTuple.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCC93C83A7026AE4C167CAD /* EXPFloatTuple.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		287F72670766E100A14B65DF /* SPTSharedExampleGroups.m in Sources */ = {isa = PBXBuildFile; fileRef = D77608C91B330D6CFA85DB37 /* SPTSharedExampleGroups.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		28A88BDD76E1265D9E81353E /* Pods-JCUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 923326113A95194FAFE88153 /* Pods-JCUtils_Tests-dummy.m */; };
+		2A4DC07CCF3DFFBA7AC28410 /* EXPMatchers+beginWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 452BADC4D109CFD32FF7339E /* EXPMatchers+beginWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2AF88DAFA756432CD364EC46 /* SPTTestSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 114FD3F182EC9C9F61F6476E /* SPTTestSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2AFCE4A5054CED9861B195D0 /* XCTest+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 11577FE5B79B6A8E38C04C78 /* XCTest+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B4AF6DE165724B8094E6315 /* EXPMatchers+beSubclassOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 85E4A365E58DAA6E6BBABFF3 /* EXPMatchers+beSubclassOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF8A161C867F1869DB9FF4A /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = C0EA3BE753DBCE09CDCC8147 /* EXPMatchers+beGreaterThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E48922DAD97034A8D8952B5 /* Pods-JCUtils_Tests-JCUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AFDFC90D34EE232A3BFCD6 /* Pods-JCUtils_Tests-JCUtils-dummy.m */; };
+		302CDC173A0268C2E8CA2097 /* EXPMatchers+match.h in Headers */ = {isa = PBXBuildFile; fileRef = F8D35333AE365506C6FB53F1 /* EXPMatchers+match.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		305BE64EF5A9361AF93ACBCB /* XCTestCase+Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = EB1A9963EB1F50AB58E04C44 /* XCTestCase+Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3178D94A603C6B9C30F2F4D9 /* Pods-JCUtils_Tests-Expecta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 362C387B1D630AFC6416E77D /* Pods-JCUtils_Tests-Expecta-dummy.m */; };
+		31E8DC94FA87C1A56692391D /* EXPMatcherHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A446B7DAB65DD10C95EB5F2 /* EXPMatcherHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		350BB82D36DD0961AF4BF779 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF97138CDC5A190D7EB65A /* ReplaceMe.m */; };
+		35EC3974BE8C7746BC282909 /* EXPMatchers+postNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 040C2100F60248869D48E3AF /* EXPMatchers+postNotification.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		394732E5D91C12493CE933E4 /* EXPDoubleTuple.h in Headers */ = {isa = PBXBuildFile; fileRef = 3803E7B7CF344B55701E63DB /* EXPDoubleTuple.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3AB90A59E7D62D4B8B97D5F9 /* EXPMatchers+postNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = D23D07D3AD7775CD858DD9BF /* EXPMatchers+postNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3BBBD8E1001BBF171B57BD56 /* EXPMatcherHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AB5C384172445779D073768 /* EXPMatcherHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3C9D2F64E97D81A46E568EF4 /* EXPMatchers+endWith.m in Sources */ = {isa = PBXBuildFile; fileRef = 74421E6A59C40B24E4FC3194 /* EXPMatchers+endWith.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		3DB62FF510633DFBBD60B5A1 /* Pods-JCUtils_Tests-Expecta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D859C483FD35CBF4ABBD17 /* Pods-JCUtils_Tests-Expecta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40049BCC9FB771E939D39AE3 /* SPTSpec.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF61882DD11029A02144B42 /* SPTSpec.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		497906BB1530274FEB6FE4BA /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BBF97138CDC5A190D7EB65A /* ReplaceMe.m */; };
+		4C5F7DF0189C39E8958A0171 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20610B7FCB4B512E09FC5045 /* XCTest.framework */; };
+		4EB4A17449CCE107BF0C2893 /* SpectaUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = AA5DEB64D359DA6F9525AD1B /* SpectaUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FE2B6FB1E79998846F2254F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336B764B83BE5835BA431CB /* Foundation.framework */; };
+		502AE2C654FFC0738BC8EC03 /* EXPMatchers+respondTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5470318C281CDFB6088A2C /* EXPMatchers+respondTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		52DDC9D6C8876693896E1D1D /* NSObject+Expecta.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A83C7A0A4F9D5C6737FFFBA /* NSObject+Expecta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5541EF00E826AB8996AA639F /* SPTExampleGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 558CD09A211101B92BE2E97F /* SPTExampleGroup.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		56BA92571F2DDED3AD78628A /* EXPUnsupportedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E3CA071BFFAC5647FF0D3FFC /* EXPUnsupportedObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		578AC8DB867D81E2D0B7DDD0 /* EXPExpect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB70F67332675F7D9D748B3 /* EXPExpect.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		58E5B0458EBF2B0C531E7E91 /* EXPMatchers+beTruthy.h in Headers */ = {isa = PBXBuildFile; fileRef = FE95D6278CF49A11FD693E51 /* EXPMatchers+beTruthy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5928658322C22143EB6BDF41 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 402365DEAE99AA9116633E37 /* EXPMatchers+beLessThanOrEqualTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		59C2B7EC6ECDADABE43E6A95 /* EXPMatchers+beNil.m in Sources */ = {isa = PBXBuildFile; fileRef = D5711724D68E81DD031D3201 /* EXPMatchers+beNil.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5AAA466DEE758B69C4FAFD6D /* EXPMatchers+beGreaterThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF73B8FEAEF6620A6A1DA3E /* EXPMatchers+beGreaterThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5C76626F837D50C8E260C762 /* EXPMatchers+beIdenticalTo.m in Sources */ = {isa = PBXBuildFile; fileRef = A270BCC00C5943D4A2293BBD /* EXPMatchers+beIdenticalTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6174DF7E9DF98C0DD434A9A3 /* EXPMatchers+equal.h in Headers */ = {isa = PBXBuildFile; fileRef = DC516440A54F4F72759B5022 /* EXPMatchers+equal.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		620FDBE8A82FDC3CA4460D95 /* EXPMatchers+beFalsy.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BE9C4D9F3BAF995F468EA9 /* EXPMatchers+beFalsy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6678034D1B586CAC00C0C08B /* JCAnimationHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6678034B1B586CAC00C0C08B /* JCAnimationHelper.h */; };
+		6678034E1B586CAC00C0C08B /* JCAnimationHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6678034C1B586CAC00C0C08B /* JCAnimationHelper.m */; };
+		667803521B586CCF00C0C08B /* JCBaseDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 667803501B586CCF00C0C08B /* JCBaseDateFormatter.h */; };
+		667803531B586CCF00C0C08B /* JCBaseDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 667803511B586CCF00C0C08B /* JCBaseDateFormatter.m */; };
+		667803561B586CD900C0C08B /* JCFullDateFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 667803541B586CD900C0C08B /* JCFullDateFormatter.h */; };
+		667803571B586CD900C0C08B /* JCFullDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 667803551B586CD900C0C08B /* JCFullDateFormatter.m */; };
+		6678035B1B586CF600C0C08B /* JCCoreDataHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 667803591B586CF600C0C08B /* JCCoreDataHelper.h */; };
+		6678035C1B586CF600C0C08B /* JCCoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6678035A1B586CF600C0C08B /* JCCoreDataHelper.m */; };
+		667803621B586D3800C0C08B /* JCSimpleArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 6678035E1B586D3800C0C08B /* JCSimpleArrayDataSource.h */; };
+		667803631B586D3800C0C08B /* JCSimpleArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6678035F1B586D3800C0C08B /* JCSimpleArrayDataSource.m */; };
+		667803641B586D3800C0C08B /* JCSimpleSectionArrayDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 667803601B586D3800C0C08B /* JCSimpleSectionArrayDataSource.h */; };
+		667803651B586D3800C0C08B /* JCSimpleSectionArrayDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 667803611B586D3800C0C08B /* JCSimpleSectionArrayDataSource.m */; };
+		6753CE342B3E770048F96A3B /* EXPMatchers+beSubclassOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CD920800A99EB1171E2EF1E /* EXPMatchers+beSubclassOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		76C58911557F572E17E2602E /* ExpectaObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F596CCE42B5EBB2594C2C51 /* ExpectaObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A185FAF651A821CD44886E6 /* EXPBlockDefinedMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = EA9B25AEE47ED2140FDE5E5B /* EXPBlockDefinedMatcher.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7B56F2D32B029ED11B8A1128 /* EXPMatchers+beSupersetOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A3E8F7BAD87CD184FB965A42 /* EXPMatchers+beSupersetOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7D67C018F5AC15567D676F8C /* EXPMatchers+beKindOf.m in Sources */ = {isa = PBXBuildFile; fileRef = AB04640B193FED7E7E846DD3 /* EXPMatchers+beKindOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		803F1E51C99FB657E6B65A78 /* EXPMatchers+endWith.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C71CC1D33B1BB741FB6E3CE /* EXPMatchers+endWith.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82F41D4BF4EFECE288A08CA2 /* Pods-JCUtils_Example-JCUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58491584F8377B0C1CE609B3 /* Pods-JCUtils_Example-JCUtils-dummy.m */; };
+		86CC552FC7511EFA8FE31B74 /* Specta.h in Headers */ = {isa = PBXBuildFile; fileRef = 628CD3FA7198E5301E6F728C /* Specta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88BDA1EBE95E8286642D6EC6 /* EXPMatchers+haveCountOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C01FF789084741935BCCA4E /* EXPMatchers+haveCountOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		89F8EBD990C77A26C19A16BD /* Pods-JCUtils_Tests-JCUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D30FCC47635DB53D86527575 /* Pods-JCUtils_Tests-JCUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A01CE6D62ACA8ADA7E290C0 /* EXPMatchers+beLessThan.m in Sources */ = {isa = PBXBuildFile; fileRef = 008022A5A9EA36818F29742C /* EXPMatchers+beLessThan.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8BC471E0D103A8DD9B38AD39 /* EXPMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 88FFB4ABF5790378FCE5FB1A /* EXPMatcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E51C49E6CC04B6EE5E45C76 /* ExpectaSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCEDB4B95CE880209F1ACC1 /* ExpectaSupport.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8E5D47FE1E923D5AFD3C34A7 /* EXPMatchers+haveCountOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 84960540817D62EB68CBAB6B /* EXPMatchers+haveCountOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93DCE4613392EF414814E645 /* Pods-JCUtils_Example-JCUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CB9A2732CDBC642E7AF12A5 /* Pods-JCUtils_Example-JCUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		971EA72F72F5D5B472E4470F /* EXPMatchers.h in Headers */ = {isa = PBXBuildFile; fileRef = ECC1F27E06DEC8399E39A97E /* EXPMatchers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A27DDA6DBBBF9C21F2C99EA /* EXPMatchers+beCloseTo.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A721A709700AA04C14C774 /* EXPMatchers+beCloseTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		9F5605D62CCCA9D5A5B1DA8C /* EXPMatchers+raise.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F5F6B004549F3C98C827F2E /* EXPMatchers+raise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1B6F5FFC09B383F10789B07 /* SPTExampleGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC4119F19358FFCDF73EF99 /* SPTExampleGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2DE1B7ABA651986A93084C3 /* ExpectaSupport.h in Headers */ = {isa = PBXBuildFile; fileRef = 4277523420183BE339282FE3 /* ExpectaSupport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A341A92FA3F65338BBF88C1B /* SpectaUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = D1339A54FFEEDB15B88EFC97 /* SpectaUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A5897F6CB3AAEE55244D9FD2 /* EXPMatchers+beInTheRangeOf.m in Sources */ = {isa = PBXBuildFile; fileRef = 3106EB5D931699BA7E02283B /* EXPMatchers+beInTheRangeOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A67033FF9EF69113E6721FB2 /* EXPMatchers+conformTo.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C0C2923F5AF3F2EC635008 /* EXPMatchers+conformTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9C2A5C2335DC1038ED639D3 /* EXPMatchers+equal.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABAB5F11B371DA84FF3E608 /* EXPMatchers+equal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A9C3C6337139849BBC67758F /* EXPMatchers+beSupersetOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 5786C5D8DB1B0EABD6752C79 /* EXPMatchers+beSupersetOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA520A616F64A359BC56004D /* EXPMatchers+raiseWithReason.h in Headers */ = {isa = PBXBuildFile; fileRef = EAE5585935B9FBC5CEF86CA0 /* EXPMatchers+raiseWithReason.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABD106BAD00F7DD8FE466993 /* EXPUnsupportedObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 6168E857A99AFA6A3B0A37AE /* EXPUnsupportedObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC1B139C563AE974C09996AB /* SpectaDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 85BD0FB2D779C08A565CB349 /* SpectaDSL.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD284BF2300428DD2F5071D4 /* EXPMatchers+raise.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C18E46A5320D3C981631C61 /* EXPMatchers+raise.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD92D1593E897756411B4BFF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336B764B83BE5835BA431CB /* Foundation.framework */; };
+		B192CD4EF97DE1D482E9BC56 /* EXPMatchers+beFalsy.h in Headers */ = {isa = PBXBuildFile; fileRef = CD2D7822CB28A75F337C3EC9 /* EXPMatchers+beFalsy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B40FB40C997B594B0391F7B0 /* EXPMatchers+beIdenticalTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 50C4E79EADB41DD0A4F56FA4 /* EXPMatchers+beIdenticalTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B599A543F03A4808EC2C8390 /* SPTCallSite.h in Headers */ = {isa = PBXBuildFile; fileRef = 702D2BBC567DC1F4AFC2763F /* SPTCallSite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7C7B5D2A02233BB1FD34EE2 /* EXPMatchers+beInTheRangeOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E1640919539BCE872AF9FC7 /* EXPMatchers+beInTheRangeOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9215962F8DF7CEE54FB9269 /* SPTExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 060E126AB7484690E005FF85 /* SPTExample.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		BC1162BA7C4076003C07BFC7 /* Pods-JCUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 495E36B91ED2A61091F5E902 /* Pods-JCUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE1F112FBE9A74DA1056727B /* SPTGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 064195DCE1E8B23B2FB3D71B /* SPTGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C18EEE7E7A197C724F962216 /* SPTExample.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A022E5F257A4D0D6001D357 /* SPTExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C208EC6AB735E093190CF038 /* SpectaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 014A985C433BAA79C29C204A /* SpectaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C443EFB472E6C2B6D4C5987E /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */ = {isa = PBXBuildFile; fileRef = E39EA536A6451692A161D87D /* EXPMatchers+beGreaterThanOrEqualTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C690D83A8DE56A548E1D9E94 /* XCTestCase+Specta.m in Sources */ = {isa = PBXBuildFile; fileRef = EB36EDCD49904ADA669C968B /* XCTestCase+Specta.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C820CEA3AFE970FFBA39CF2F /* SPTExcludeGlobalBeforeAfterEach.h in Headers */ = {isa = PBXBuildFile; fileRef = 180525376F60BC61E38A98E7 /* SPTExcludeGlobalBeforeAfterEach.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8FB4689AE50359D3D9BA46D /* Pods-JCUtils_Tests-Specta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DA56EC75DDE9FD264267E10F /* Pods-JCUtils_Tests-Specta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9AF1217BEC5D0EA565C5539 /* EXPMatchers+beCloseTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8673E500ED7090E643306704 /* EXPMatchers+beCloseTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB003B10FE3F54BE66B0D96E /* NSValue+Expecta.m in Sources */ = {isa = PBXBuildFile; fileRef = 490B814F9E36A19B6B775829 /* NSValue+Expecta.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CB4C5824E8CACD9A07F1584B /* EXPMatchers+contain.h in Headers */ = {isa = PBXBuildFile; fileRef = F9C6883623DA4A4DEA135A45 /* EXPMatchers+contain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD50CD3BF85433B831A4F9C4 /* EXPMatchers+beGreaterThan.h in Headers */ = {isa = PBXBuildFile; fileRef = 30318418C756C0D893AC6759 /* EXPMatchers+beGreaterThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0EE8B372C5B1BC7AAD96CC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336B764B83BE5835BA431CB /* Foundation.framework */; };
+		D58C62CBBC71BFA9A7F3B900 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336B764B83BE5835BA431CB /* Foundation.framework */; };
+		D67223B88473EE544E182CB6 /* EXPMatchers+conformTo.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EBE4D9634AC9DE0292A545 /* EXPMatchers+conformTo.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DA677CC2CAD42B3A4BF10653 /* EXPMatchers+beLessThan.h in Headers */ = {isa = PBXBuildFile; fileRef = E9BEA71A51B4184120C01EC1 /* EXPMatchers+beLessThan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E49C995B5C0CAB3043226468 /* JCUtils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CFDEE3C5BF53FAD65F7F8142 /* JCUtils.bundle */; };
+		E8AF6F22F675F848AC13DC4F /* EXPMatchers+contain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E384B38200E5AC67413FAFC /* EXPMatchers+contain.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EAC325DCFA2F13093B673822 /* EXPMatchers+respondTo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0ED3FE59BECE2EEC5BF12A /* EXPMatchers+respondTo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F12ECB45E28354D790E5DE4D /* EXPMatchers+beInstanceOf.m in Sources */ = {isa = PBXBuildFile; fileRef = A867EC92235D6B8E48621049 /* EXPMatchers+beInstanceOf.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F3A753E8DD83F43270CC7789 /* EXPExpect.h in Headers */ = {isa = PBXBuildFile; fileRef = 116BE0D626A220B2824644F1 /* EXPExpect.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3B8C2A450B256D30AFB644D /* Pods-JCUtils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFEDFD841491A6F6E5C1FD /* Pods-JCUtils_Example-dummy.m */; };
+		F41321BF08E47293CAF08300 /* SPTTestSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2C1CCD64BB5714A362AF3A /* SPTTestSuite.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F6DBC6086DBA6E9FD49E7999 /* EXPMatchers+beInstanceOf.h in Headers */ = {isa = PBXBuildFile; fileRef = 1665BE5726124BAE9135CD1D /* EXPMatchers+beInstanceOf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F70F04345714170FFEA2348C /* JCUtils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 482D7509A38B5273339ADE01 /* JCUtils.bundle */; };
+		F7A20C22CDDBD2A2A0B50B15 /* SPTCompiledExample.h in Headers */ = {isa = PBXBuildFile; fileRef = E65115073B4A84FFFBAB66E4 /* SPTCompiledExample.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F848D517D92D541690B7252E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4336B764B83BE5835BA431CB /* Foundation.framework */; };
+		FA5BDAD3FC8251966332F0BA /* ExpectaObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D3BD046109E2AD01DCB8EB /* ExpectaObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AA9EA42A0EC00E70A97CBEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E1ABBAC47D9C168860B91C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B2C521479BD8007BBD994BC0;
+			remoteInfo = "Pods-JCUtils_Example-JCUtils";
+		};
+		7075344CEB13E92D3A1CBD1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E1ABBAC47D9C168860B91C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 961FAC0B7A66694E3EEED70D;
+			remoteInfo = "Pods-JCUtils_Tests-JCUtils";
+		};
+		99EDB57FF6DE6F36C8461FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E1ABBAC47D9C168860B91C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B64ADF7AD0C8A21441CFC0BD;
+			remoteInfo = "Pods-JCUtils_Tests-Specta";
+		};
+		BFC7055157B4D3F653C476EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E1ABBAC47D9C168860B91C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43F03DCC179432B5889B57DD;
+			remoteInfo = "Pods-JCUtils_Tests-JCUtils-JCUtils";
+		};
+		EA921BCDF8F40B15E1543D04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E1ABBAC47D9C168860B91C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F2937FD9EFCA5EC1C4C1EAB8;
+			remoteInfo = "Pods-JCUtils_Example-JCUtils-JCUtils";
+		};
+		FC499D4B950DBA2E72EC3B5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E1ABBAC47D9C168860B91C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40FBDB720140C89A922638B9;
+			remoteInfo = "Pods-JCUtils_Tests-Expecta";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		008022A5A9EA36818F29742C /* EXPMatchers+beLessThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThan.m"; path = "Expecta/Matchers/EXPMatchers+beLessThan.m"; sourceTree = "<group>"; };
+		014A985C433BAA79C29C204A /* SpectaTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaTypes.h; path = Specta/Specta/SpectaTypes.h; sourceTree = "<group>"; };
+		040C2100F60248869D48E3AF /* EXPMatchers+postNotification.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+postNotification.m"; path = "Expecta/Matchers/EXPMatchers+postNotification.m"; sourceTree = "<group>"; };
+		04CA6813BBDA698CE2232CE2 /* Pods-JCUtils_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCUtils_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		060E126AB7484690E005FF85 /* SPTExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExample.m; path = Specta/Specta/SPTExample.m; sourceTree = "<group>"; };
+		064195DCE1E8B23B2FB3D71B /* SPTGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTGlobalBeforeAfterEach.h; path = Specta/Specta/SPTGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		098132AA37494B68A9A03104 /* Pods-JCUtils_Tests-Expecta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Tests-Expecta-Private.xcconfig"; sourceTree = "<group>"; };
+		0E04D33286281C4FA452738E /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		114FD3F182EC9C9F61F6476E /* SPTTestSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTTestSuite.h; path = Specta/Specta/SPTTestSuite.h; sourceTree = "<group>"; };
+		11577FE5B79B6A8E38C04C78 /* XCTest+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTest+Private.h"; path = "Specta/Specta/XCTest+Private.h"; sourceTree = "<group>"; };
+		116BE0D626A220B2824644F1 /* EXPExpect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPExpect.h; path = Expecta/EXPExpect.h; sourceTree = "<group>"; };
+		1665BE5726124BAE9135CD1D /* EXPMatchers+beInstanceOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInstanceOf.h"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.h"; sourceTree = "<group>"; };
+		16CD93C07F21AC72AF568BC1 /* SPTSpec.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSpec.m; path = Specta/Specta/SPTSpec.m; sourceTree = "<group>"; };
+		180525376F60BC61E38A98E7 /* SPTExcludeGlobalBeforeAfterEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExcludeGlobalBeforeAfterEach.h; path = Specta/Specta/SPTExcludeGlobalBeforeAfterEach.h; sourceTree = "<group>"; };
+		1851C4B822F8FC25B1598FAC /* Pods-JCUtils_Tests-JCUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-JCUtils_Tests-JCUtils.modulemap"; path = "../Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils.modulemap"; sourceTree = "<group>"; };
+		1888C2C9384DB00CA6891D33 /* EXPMatchers+beTruthy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beTruthy.m"; path = "Expecta/Matchers/EXPMatchers+beTruthy.m"; sourceTree = "<group>"; };
+		1CB9A2732CDBC642E7AF12A5 /* Pods-JCUtils_Example-JCUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Example-JCUtils-umbrella.h"; sourceTree = "<group>"; };
+		1CC5B7CDE99F2B23F3DBFE8E /* Specta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Specta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CF73B8FEAEF6620A6A1DA3E /* EXPMatchers+beGreaterThan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThan.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.m"; sourceTree = "<group>"; };
+		1E1640919539BCE872AF9FC7 /* EXPMatchers+beInTheRangeOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beInTheRangeOf.h"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.h"; sourceTree = "<group>"; };
+		1EDFEDFD841491A6F6E5C1FD /* Pods-JCUtils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCUtils_Example-dummy.m"; sourceTree = "<group>"; };
+		20610B7FCB4B512E09FC5045 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		210BEC8B976A772D6BE5DE11 /* Pods-JCUtils_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCUtils_Tests-resources.sh"; sourceTree = "<group>"; };
+		23B954A1B447A3498F01F048 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B5470318C281CDFB6088A2C /* EXPMatchers+respondTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+respondTo.m"; path = "Expecta/Matchers/EXPMatchers+respondTo.m"; sourceTree = "<group>"; };
+		30318418C756C0D893AC6759 /* EXPMatchers+beGreaterThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThan.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThan.h"; sourceTree = "<group>"; };
+		3106EB5D931699BA7E02283B /* EXPMatchers+beInTheRangeOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInTheRangeOf.m"; path = "Expecta/Matchers/EXPMatchers+beInTheRangeOf.m"; sourceTree = "<group>"; };
+		33B6A738BF25125F39B466A3 /* EXPMatchers+match.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+match.m"; path = "Expecta/Matchers/EXPMatchers+match.m"; sourceTree = "<group>"; };
+		354868680306B0026457A3E7 /* Pods-JCUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		362C387B1D630AFC6416E77D /* Pods-JCUtils_Tests-Expecta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCUtils_Tests-Expecta-dummy.m"; sourceTree = "<group>"; };
+		36BE9C4D9F3BAF995F468EA9 /* EXPMatchers+beFalsy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beFalsy.m"; path = "Expecta/Matchers/EXPMatchers+beFalsy.m"; sourceTree = "<group>"; };
+		37D3BD046109E2AD01DCB8EB /* ExpectaObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaObject.m; path = Expecta/ExpectaObject.m; sourceTree = "<group>"; };
+		3803E7B7CF344B55701E63DB /* EXPDoubleTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDoubleTuple.h; path = Expecta/EXPDoubleTuple.h; sourceTree = "<group>"; };
+		3A022E5F257A4D0D6001D357 /* SPTExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExample.h; path = Specta/Specta/SPTExample.h; sourceTree = "<group>"; };
+		3ABAB5F11B371DA84FF3E608 /* EXPMatchers+equal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+equal.m"; path = "Expecta/Matchers/EXPMatchers+equal.m"; sourceTree = "<group>"; };
+		3C01FF789084741935BCCA4E /* EXPMatchers+haveCountOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+haveCountOf.m"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.m"; sourceTree = "<group>"; };
+		402365DEAE99AA9116633E37 /* EXPMatchers+beLessThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.h"; sourceTree = "<group>"; };
+		416DEE0C4B047E7ABA35C129 /* SPTCompiledExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCompiledExample.m; path = Specta/Specta/SPTCompiledExample.m; sourceTree = "<group>"; };
+		4277523420183BE339282FE3 /* ExpectaSupport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaSupport.h; path = Expecta/ExpectaSupport.h; sourceTree = "<group>"; };
+		430F8028F27F10B2ED332BF0 /* Pods-JCUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JCUtils_Example.modulemap"; sourceTree = "<group>"; };
+		4336B764B83BE5835BA431CB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		452BADC4D109CFD32FF7339E /* EXPMatchers+beginWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beginWith.m"; path = "Expecta/Matchers/EXPMatchers+beginWith.m"; sourceTree = "<group>"; };
+		482D7509A38B5273339ADE01 /* JCUtils.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCUtils.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		490B814F9E36A19B6B775829 /* NSValue+Expecta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+Expecta.m"; path = "Expecta/NSValue+Expecta.m"; sourceTree = "<group>"; };
+		495E36B91ED2A61091F5E902 /* Pods-JCUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Example-umbrella.h"; sourceTree = "<group>"; };
+		4AB70F67332675F7D9D748B3 /* EXPExpect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPExpect.m; path = Expecta/EXPExpect.m; sourceTree = "<group>"; };
+		4C8D709A765D4F15ED52FBBD /* Pods-JCUtils_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCUtils_Example-resources.sh"; sourceTree = "<group>"; };
+		4F2A732FC1FED289474D95E4 /* Pods-JCUtils_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Tests-environment.h"; sourceTree = "<group>"; };
+		4F596CCE42B5EBB2594C2C51 /* ExpectaObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ExpectaObject.h; path = Expecta/ExpectaObject.h; sourceTree = "<group>"; };
+		4FCD65024709E8593DB19CF3 /* Pods-JCUtils_Tests-Expecta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JCUtils_Tests-Expecta.modulemap"; sourceTree = "<group>"; };
+		50C4E79EADB41DD0A4F56FA4 /* EXPMatchers+beIdenticalTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beIdenticalTo.h"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.h"; sourceTree = "<group>"; };
+		519C2723B2A361545E103043 /* Pods-JCUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		558CD09A211101B92BE2E97F /* SPTExampleGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTExampleGroup.m; path = Specta/Specta/SPTExampleGroup.m; sourceTree = "<group>"; };
+		56B8B7F4FB7DB8E780D9916B /* EXPMatchers+raiseWithReason.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raiseWithReason.m"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.m"; sourceTree = "<group>"; };
+		56D859C483FD35CBF4ABBD17 /* Pods-JCUtils_Tests-Expecta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Tests-Expecta-umbrella.h"; sourceTree = "<group>"; };
+		5786C5D8DB1B0EABD6752C79 /* EXPMatchers+beSupersetOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSupersetOf.h"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.h"; sourceTree = "<group>"; };
+		582E6DF60CBF267F499045AD /* EXPDoubleTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPDoubleTuple.m; path = Expecta/EXPDoubleTuple.m; sourceTree = "<group>"; };
+		58491584F8377B0C1CE609B3 /* Pods-JCUtils_Example-JCUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCUtils_Example-JCUtils-dummy.m"; sourceTree = "<group>"; };
+		5AC4119F19358FFCDF73EF99 /* SPTExampleGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTExampleGroup.h; path = Specta/Specta/SPTExampleGroup.h; sourceTree = "<group>"; };
+		5C71CC1D33B1BB741FB6E3CE /* EXPMatchers+endWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+endWith.h"; path = "Expecta/Matchers/EXPMatchers+endWith.h"; sourceTree = "<group>"; };
+		5D2C1CCD64BB5714A362AF3A /* SPTTestSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTTestSuite.m; path = Specta/Specta/SPTTestSuite.m; sourceTree = "<group>"; };
+		5DA92F7B0A76BCDF4D8008C8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F5F6B004549F3C98C827F2E /* EXPMatchers+raise.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raise.h"; path = "Expecta/Matchers/EXPMatchers+raise.h"; sourceTree = "<group>"; };
+		6101C5CEF6493630C8BEFC99 /* Pods_JCUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6168E857A99AFA6A3B0A37AE /* EXPUnsupportedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPUnsupportedObject.h; path = Expecta/EXPUnsupportedObject.h; sourceTree = "<group>"; };
+		628CD3FA7198E5301E6F728C /* Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Specta.h; path = Specta/Specta/Specta.h; sourceTree = "<group>"; };
+		6678034B1B586CAC00C0C08B /* JCAnimationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAnimationHelper.h; sourceTree = "<group>"; };
+		6678034C1B586CAC00C0C08B /* JCAnimationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAnimationHelper.m; sourceTree = "<group>"; };
+		667803501B586CCF00C0C08B /* JCBaseDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBaseDateFormatter.h; sourceTree = "<group>"; };
+		667803511B586CCF00C0C08B /* JCBaseDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBaseDateFormatter.m; sourceTree = "<group>"; };
+		667803541B586CD900C0C08B /* JCFullDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCFullDateFormatter.h; sourceTree = "<group>"; };
+		667803551B586CD900C0C08B /* JCFullDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFullDateFormatter.m; sourceTree = "<group>"; };
+		667803591B586CF600C0C08B /* JCCoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCoreDataHelper.h; sourceTree = "<group>"; };
+		6678035A1B586CF600C0C08B /* JCCoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCoreDataHelper.m; sourceTree = "<group>"; };
+		6678035E1B586D3800C0C08B /* JCSimpleArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSimpleArrayDataSource.h; sourceTree = "<group>"; };
+		6678035F1B586D3800C0C08B /* JCSimpleArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSimpleArrayDataSource.m; sourceTree = "<group>"; };
+		667803601B586D3800C0C08B /* JCSimpleSectionArrayDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSimpleSectionArrayDataSource.h; sourceTree = "<group>"; };
+		667803611B586D3800C0C08B /* JCSimpleSectionArrayDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSimpleSectionArrayDataSource.m; sourceTree = "<group>"; };
+		683BD1E04047750480BE77C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-JCUtils_Tests-JCUtils/Info.plist"; sourceTree = "<group>"; };
+		6982ECDBBC3F6D0560FAD55F /* EXPFloatTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPFloatTuple.h; path = Expecta/EXPFloatTuple.h; sourceTree = "<group>"; };
+		6A446B7DAB65DD10C95EB5F2 /* EXPMatcherHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcherHelpers.h; path = Expecta/Matchers/EXPMatcherHelpers.h; sourceTree = "<group>"; };
+		6AB2372EE549A01B7332976A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BBF97138CDC5A190D7EB65A /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		6D710FD8F450C54A07204FA9 /* Pods-JCUtils_Tests-JCUtils-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCUtils_Tests-JCUtils-Private.xcconfig"; path = "../Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils-Private.xcconfig"; sourceTree = "<group>"; };
+		6E463D3CCE9C7E2A0991D692 /* Expecta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Expecta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		702D2BBC567DC1F4AFC2763F /* SPTCallSite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCallSite.h; path = Specta/Specta/SPTCallSite.h; sourceTree = "<group>"; };
+		7287387C3E5CD2D455FE1AE9 /* Pods_JCUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73AFDFC90D34EE232A3BFCD6 /* Pods-JCUtils_Tests-JCUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-JCUtils_Tests-JCUtils-dummy.m"; path = "../Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils-dummy.m"; sourceTree = "<group>"; };
+		74421E6A59C40B24E4FC3194 /* EXPMatchers+endWith.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+endWith.m"; path = "Expecta/Matchers/EXPMatchers+endWith.m"; sourceTree = "<group>"; };
+		79C46091612D064F6E3F6323 /* Pods-JCUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JCUtils_Tests.modulemap"; sourceTree = "<group>"; };
+		7A83C7A0A4F9D5C6737FFFBA /* NSObject+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Expecta.h"; path = "Expecta/NSObject+Expecta.h"; sourceTree = "<group>"; };
+		7D0ED3FE59BECE2EEC5BF12A /* EXPMatchers+respondTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+respondTo.h"; path = "Expecta/Matchers/EXPMatchers+respondTo.h"; sourceTree = "<group>"; };
+		7E62BB37E0C0D35A95C660C0 /* NSValue+Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSValue+Expecta.h"; path = "Expecta/NSValue+Expecta.h"; sourceTree = "<group>"; };
+		7E7CCECC254C8B73961DC193 /* EXPMatchers+beLessThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beLessThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beLessThanOrEqualTo.m"; sourceTree = "<group>"; };
+		82251E78E2D5EF06B3F2F401 /* Pods-JCUtils_Tests-Specta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JCUtils_Tests-Specta.modulemap"; sourceTree = "<group>"; };
+		84960540817D62EB68CBAB6B /* EXPMatchers+haveCountOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+haveCountOf.h"; path = "Expecta/Matchers/EXPMatchers+haveCountOf.h"; sourceTree = "<group>"; };
+		85BD0FB2D779C08A565CB349 /* SpectaDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaDSL.h; path = Specta/Specta/SpectaDSL.h; sourceTree = "<group>"; };
+		85E4A365E58DAA6E6BBABFF3 /* EXPMatchers+beSubclassOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beSubclassOf.h"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.h"; sourceTree = "<group>"; };
+		8673E500ED7090E643306704 /* EXPMatchers+beCloseTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beCloseTo.h"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.h"; sourceTree = "<group>"; };
+		86BC59BD7A920438FB368A40 /* EXPMatchers+beginWith.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beginWith.h"; path = "Expecta/Matchers/EXPMatchers+beginWith.h"; sourceTree = "<group>"; };
+		88FFB4ABF5790378FCE5FB1A /* EXPMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatcher.h; path = Expecta/EXPMatcher.h; sourceTree = "<group>"; };
+		8AB5C384172445779D073768 /* EXPMatcherHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPMatcherHelpers.m; path = Expecta/Matchers/EXPMatcherHelpers.m; sourceTree = "<group>"; };
+		8C18E46A5320D3C981631C61 /* EXPMatchers+raise.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+raise.m"; path = "Expecta/Matchers/EXPMatchers+raise.m"; sourceTree = "<group>"; };
+		8F907B9277DA78770A47A141 /* SPTCallSite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTCallSite.m; path = Specta/Specta/SPTCallSite.m; sourceTree = "<group>"; };
+		923326113A95194FAFE88153 /* Pods-JCUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCUtils_Tests-dummy.m"; sourceTree = "<group>"; };
+		92C3A5888852C5AECDEE0AB8 /* Pods-JCUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
+		94150E6ADA36D398B35F4EE2 /* JCUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98EBE4D9634AC9DE0292A545 /* EXPMatchers+conformTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+conformTo.m"; path = "Expecta/Matchers/EXPMatchers+conformTo.m"; sourceTree = "<group>"; };
+		9B91CEA40EF4903ABA0900BA /* Pods-JCUtils_Tests-Specta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JCUtils_Tests-Specta-dummy.m"; sourceTree = "<group>"; };
+		9CD920800A99EB1171E2EF1E /* EXPMatchers+beSubclassOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSubclassOf.m"; path = "Expecta/Matchers/EXPMatchers+beSubclassOf.m"; sourceTree = "<group>"; };
+		9D30AF803B2BC08B5BA898EE /* Pods-JCUtils_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCUtils_Example-frameworks.sh"; sourceTree = "<group>"; };
+		9E384B38200E5AC67413FAFC /* EXPMatchers+contain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+contain.m"; path = "Expecta/Matchers/EXPMatchers+contain.m"; sourceTree = "<group>"; };
+		A05041E89E56AD591A2CB513 /* Pods-JCUtils_Example-JCUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JCUtils_Example-JCUtils.modulemap"; sourceTree = "<group>"; };
+		A270BCC00C5943D4A2293BBD /* EXPMatchers+beIdenticalTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beIdenticalTo.m"; path = "Expecta/Matchers/EXPMatchers+beIdenticalTo.m"; sourceTree = "<group>"; };
+		A3E8F7BAD87CD184FB965A42 /* EXPMatchers+beSupersetOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beSupersetOf.m"; path = "Expecta/Matchers/EXPMatchers+beSupersetOf.m"; sourceTree = "<group>"; };
+		A58447C40E20F7CED2CF1CC5 /* Pods-JCUtils_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JCUtils_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A80F6165AB72F1F79FAB5A73 /* Pods-JCUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A867EC92235D6B8E48621049 /* EXPMatchers+beInstanceOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beInstanceOf.m"; path = "Expecta/Matchers/EXPMatchers+beInstanceOf.m"; sourceTree = "<group>"; };
+		AA5DEB64D359DA6F9525AD1B /* SpectaUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SpectaUtility.h; path = Specta/Specta/SpectaUtility.h; sourceTree = "<group>"; };
+		AA88193F75E0BA67C7BCF8C0 /* EXPMatchers+beNil.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beNil.h"; path = "Expecta/Matchers/EXPMatchers+beNil.h"; sourceTree = "<group>"; };
+		AAAAA4CE1E3A2266204DDF79 /* Pods-JCUtils_Tests-JCUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JCUtils_Tests-JCUtils.xcconfig"; path = "../Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils.xcconfig"; sourceTree = "<group>"; };
+		AB04640B193FED7E7E846DD3 /* EXPMatchers+beKindOf.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beKindOf.m"; path = "Expecta/Matchers/EXPMatchers+beKindOf.m"; sourceTree = "<group>"; };
+		B0D913A37EEC52FB6147ED8E /* Pods-JCUtils_Example-JCUtils-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Example-JCUtils-Private.xcconfig"; sourceTree = "<group>"; };
+		B1789401A48054EE28B04FBA /* Pods-JCUtils_Example-JCUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Example-JCUtils-prefix.pch"; sourceTree = "<group>"; };
+		B6B8FD20EABFA401C6843915 /* Pods-JCUtils_Tests-JCUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-JCUtils_Tests-JCUtils-prefix.pch"; path = "../Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils-prefix.pch"; sourceTree = "<group>"; };
+		B8C0C2923F5AF3F2EC635008 /* EXPMatchers+conformTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+conformTo.h"; path = "Expecta/Matchers/EXPMatchers+conformTo.h"; sourceTree = "<group>"; };
+		BE015241A39CA15B7701F5F2 /* Pods-JCUtils_Tests-Specta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Tests-Specta.xcconfig"; sourceTree = "<group>"; };
+		BEDF2A9354DEAB1E9457D911 /* SpectaDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaDSL.m; path = Specta/Specta/SpectaDSL.m; sourceTree = "<group>"; };
+		C0EA3BE753DBCE09CDCC8147 /* EXPMatchers+beGreaterThanOrEqualTo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beGreaterThanOrEqualTo.h"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.h"; sourceTree = "<group>"; };
+		C3FB90C5B4EEFA782198757E /* Pods-JCUtils_Tests-Specta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Tests-Specta-prefix.pch"; sourceTree = "<group>"; };
+		C42A34246A0D71BFB9A26FBA /* Pods-JCUtils_Tests-Specta-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Tests-Specta-Private.xcconfig"; sourceTree = "<group>"; };
+		C77CED81B5AC5A15F9C27D5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8E992F69C1D30977A50C37F /* Pods-JCUtils_Example-JCUtils.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Example-JCUtils.xcconfig"; sourceTree = "<group>"; };
+		C932771EFA6A0227C1F3F361 /* Expecta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Expecta.h; path = Expecta/Expecta.h; sourceTree = "<group>"; };
+		CBCEDB4B95CE880209F1ACC1 /* ExpectaSupport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ExpectaSupport.m; path = Expecta/ExpectaSupport.m; sourceTree = "<group>"; };
+		CD2D7822CB28A75F337C3EC9 /* EXPMatchers+beFalsy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beFalsy.h"; path = "Expecta/Matchers/EXPMatchers+beFalsy.h"; sourceTree = "<group>"; };
+		CF229C6B2F5688A71C397C0B /* Pods-JCUtils_Tests-Expecta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Tests-Expecta-prefix.pch"; sourceTree = "<group>"; };
+		CFBCAEA04F1E9CB6B3228067 /* Pods-JCUtils_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Example-environment.h"; sourceTree = "<group>"; };
+		CFDEE3C5BF53FAD65F7F8142 /* JCUtils.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCUtils.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		D087EA7A0B80AA12ECF2DE0F /* EXPMatchers+beKindOf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beKindOf.h"; path = "Expecta/Matchers/EXPMatchers+beKindOf.h"; sourceTree = "<group>"; };
+		D0F9EBDA317EC2B78ECB7709 /* EXPDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPDefines.h; path = Expecta/EXPDefines.h; sourceTree = "<group>"; };
+		D1339A54FFEEDB15B88EFC97 /* SpectaUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SpectaUtility.m; path = Specta/Specta/SpectaUtility.m; sourceTree = "<group>"; };
+		D23D07D3AD7775CD858DD9BF /* EXPMatchers+postNotification.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+postNotification.h"; path = "Expecta/Matchers/EXPMatchers+postNotification.h"; sourceTree = "<group>"; };
+		D30FCC47635DB53D86527575 /* Pods-JCUtils_Tests-JCUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-JCUtils_Tests-JCUtils-umbrella.h"; path = "../Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils-umbrella.h"; sourceTree = "<group>"; };
+		D5711724D68E81DD031D3201 /* EXPMatchers+beNil.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beNil.m"; path = "Expecta/Matchers/EXPMatchers+beNil.m"; sourceTree = "<group>"; };
+		D77608C91B330D6CFA85DB37 /* SPTSharedExampleGroups.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SPTSharedExampleGroups.m; path = Specta/Specta/SPTSharedExampleGroups.m; sourceTree = "<group>"; };
+		D87DAA8977962018BAAE5720 /* SPTSharedExampleGroups.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSharedExampleGroups.h; path = Specta/Specta/SPTSharedExampleGroups.h; sourceTree = "<group>"; };
+		D8A721A709700AA04C14C774 /* EXPMatchers+beCloseTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beCloseTo.m"; path = "Expecta/Matchers/EXPMatchers+beCloseTo.m"; sourceTree = "<group>"; };
+		DA56EC75DDE9FD264267E10F /* Pods-JCUtils_Tests-Specta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Tests-Specta-umbrella.h"; sourceTree = "<group>"; };
+		DAB16AEF7F58B8702A627E9F /* JCUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JCUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC516440A54F4F72759B5022 /* EXPMatchers+equal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+equal.h"; path = "Expecta/Matchers/EXPMatchers+equal.h"; sourceTree = "<group>"; };
+		DDCC93C83A7026AE4C167CAD /* EXPFloatTuple.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPFloatTuple.m; path = Expecta/EXPFloatTuple.m; sourceTree = "<group>"; };
+		E13201C16F75B62862FB48FA /* Pods-JCUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E39EA536A6451692A161D87D /* EXPMatchers+beGreaterThanOrEqualTo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EXPMatchers+beGreaterThanOrEqualTo.m"; path = "Expecta/Matchers/EXPMatchers+beGreaterThanOrEqualTo.m"; sourceTree = "<group>"; };
+		E3CA071BFFAC5647FF0D3FFC /* EXPUnsupportedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPUnsupportedObject.m; path = Expecta/EXPUnsupportedObject.m; sourceTree = "<group>"; };
+		E5670A0C0D492ADB1654E808 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65115073B4A84FFFBAB66E4 /* SPTCompiledExample.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTCompiledExample.h; path = Specta/Specta/SPTCompiledExample.h; sourceTree = "<group>"; };
+		E9BEA71A51B4184120C01EC1 /* EXPMatchers+beLessThan.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beLessThan.h"; path = "Expecta/Matchers/EXPMatchers+beLessThan.h"; sourceTree = "<group>"; };
+		EA9B25AEE47ED2140FDE5E5B /* EXPBlockDefinedMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EXPBlockDefinedMatcher.m; path = Expecta/EXPBlockDefinedMatcher.m; sourceTree = "<group>"; };
+		EAE5585935B9FBC5CEF86CA0 /* EXPMatchers+raiseWithReason.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+raiseWithReason.h"; path = "Expecta/Matchers/EXPMatchers+raiseWithReason.h"; sourceTree = "<group>"; };
+		EAF8F189308725CB704E906E /* Pods-JCUtils_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JCUtils_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		EB1A9963EB1F50AB58E04C44 /* XCTestCase+Specta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "XCTestCase+Specta.h"; path = "Specta/Specta/XCTestCase+Specta.h"; sourceTree = "<group>"; };
+		EB36EDCD49904ADA669C968B /* XCTestCase+Specta.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "XCTestCase+Specta.m"; path = "Specta/Specta/XCTestCase+Specta.m"; sourceTree = "<group>"; };
+		ECC1F27E06DEC8399E39A97E /* EXPMatchers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPMatchers.h; path = Expecta/Matchers/EXPMatchers.h; sourceTree = "<group>"; };
+		F1412C9ABD260D180979CB2F /* Pods-JCUtils_Tests-Expecta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JCUtils_Tests-Expecta.xcconfig"; sourceTree = "<group>"; };
+		F386A2A8B4BDD08125F3D512 /* Pods-JCUtils_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JCUtils_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F39FF0CA43FC13860477F2D6 /* Pods-JCUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JCUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F8D35333AE365506C6FB53F1 /* EXPMatchers+match.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+match.h"; path = "Expecta/Matchers/EXPMatchers+match.h"; sourceTree = "<group>"; };
+		F9C6883623DA4A4DEA135A45 /* EXPMatchers+contain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+contain.h"; path = "Expecta/Matchers/EXPMatchers+contain.h"; sourceTree = "<group>"; };
+		FAF61882DD11029A02144B42 /* SPTSpec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SPTSpec.h; path = Specta/Specta/SPTSpec.h; sourceTree = "<group>"; };
+		FE95D6278CF49A11FD693E51 /* EXPMatchers+beTruthy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EXPMatchers+beTruthy.h"; path = "Expecta/Matchers/EXPMatchers+beTruthy.h"; sourceTree = "<group>"; };
+		FF2EC6E6C516CC5BC4FA9B62 /* EXPBlockDefinedMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EXPBlockDefinedMatcher.h; path = Expecta/EXPBlockDefinedMatcher.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11DFAA8D55513A55FF00871D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0EE8B372C5B1BC7AAD96CC8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3387AA1D3137AD1AFAC5057E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D58C62CBBC71BFA9A7F3B900 /* Foundation.framework in Frameworks */,
+				1DBB45A29D0F0D95AB5C09EB /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		502A045E7A9499CC17C5A90D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FE2B6FB1E79998846F2254F /* Foundation.framework in Frameworks */,
+				4C5F7DF0189C39E8958A0171 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55CFB6B1103D7EAA01B90972 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7815AD8D25991E01DC16FD13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000D1BDDBCC20689385F6F23 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4A2D2F5B3B5C794D801A7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7C5C93D8D06B032FA5D64E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F848D517D92D541690B7252E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0156200A91272A700D697AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD92D1593E897756411B4BFF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		013DBAABF2FF9E01B445D86D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7153C146779FE29E5412DC3C /* Pods-JCUtils_Example */,
+				6967F6BE38285507953C4CF6 /* Pods-JCUtils_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0373AD64F56A495D61BAA695 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AB2372EE549A01B7332976A /* Info.plist */,
+				82251E78E2D5EF06B3F2F401 /* Pods-JCUtils_Tests-Specta.modulemap */,
+				BE015241A39CA15B7701F5F2 /* Pods-JCUtils_Tests-Specta.xcconfig */,
+				C42A34246A0D71BFB9A26FBA /* Pods-JCUtils_Tests-Specta-Private.xcconfig */,
+				9B91CEA40EF4903ABA0900BA /* Pods-JCUtils_Tests-Specta-dummy.m */,
+				C3FB90C5B4EEFA782198757E /* Pods-JCUtils_Tests-Specta-prefix.pch */,
+				DA56EC75DDE9FD264267E10F /* Pods-JCUtils_Tests-Specta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-JCUtils_Tests-Specta";
+			sourceTree = "<group>";
+		};
+		1092DA89C52EF976229F9C1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A73F017AACB0E3ACAE282E45 /* Expecta */,
+				3FCD89A9B3F3E5E75E502E19 /* Specta */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		28650872699AE2411DEF4DC9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FC7B70ABBC7FBD29B9EF611E /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		2A0D17590F7A0CAE276BCAF7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4336B764B83BE5835BA431CB /* Foundation.framework */,
+				20610B7FCB4B512E09FC5045 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3FCD89A9B3F3E5E75E502E19 /* Specta */ = {
+			isa = PBXGroup;
+			children = (
+				702D2BBC567DC1F4AFC2763F /* SPTCallSite.h */,
+				8F907B9277DA78770A47A141 /* SPTCallSite.m */,
+				E65115073B4A84FFFBAB66E4 /* SPTCompiledExample.h */,
+				416DEE0C4B047E7ABA35C129 /* SPTCompiledExample.m */,
+				3A022E5F257A4D0D6001D357 /* SPTExample.h */,
+				060E126AB7484690E005FF85 /* SPTExample.m */,
+				5AC4119F19358FFCDF73EF99 /* SPTExampleGroup.h */,
+				558CD09A211101B92BE2E97F /* SPTExampleGroup.m */,
+				180525376F60BC61E38A98E7 /* SPTExcludeGlobalBeforeAfterEach.h */,
+				064195DCE1E8B23B2FB3D71B /* SPTGlobalBeforeAfterEach.h */,
+				D87DAA8977962018BAAE5720 /* SPTSharedExampleGroups.h */,
+				D77608C91B330D6CFA85DB37 /* SPTSharedExampleGroups.m */,
+				FAF61882DD11029A02144B42 /* SPTSpec.h */,
+				16CD93C07F21AC72AF568BC1 /* SPTSpec.m */,
+				114FD3F182EC9C9F61F6476E /* SPTTestSuite.h */,
+				5D2C1CCD64BB5714A362AF3A /* SPTTestSuite.m */,
+				628CD3FA7198E5301E6F728C /* Specta.h */,
+				85BD0FB2D779C08A565CB349 /* SpectaDSL.h */,
+				BEDF2A9354DEAB1E9457D911 /* SpectaDSL.m */,
+				014A985C433BAA79C29C204A /* SpectaTypes.h */,
+				AA5DEB64D359DA6F9525AD1B /* SpectaUtility.h */,
+				D1339A54FFEEDB15B88EFC97 /* SpectaUtility.m */,
+				11577FE5B79B6A8E38C04C78 /* XCTest+Private.h */,
+				EB1A9963EB1F50AB58E04C44 /* XCTestCase+Specta.h */,
+				EB36EDCD49904ADA669C968B /* XCTestCase+Specta.m */,
+				0373AD64F56A495D61BAA695 /* Support Files */,
+			);
+			path = Specta;
+			sourceTree = "<group>";
+		};
+		550CDEE2218AC66DD48BDD74 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				23B954A1B447A3498F01F048 /* Info.plist */,
+				4FCD65024709E8593DB19CF3 /* Pods-JCUtils_Tests-Expecta.modulemap */,
+				F1412C9ABD260D180979CB2F /* Pods-JCUtils_Tests-Expecta.xcconfig */,
+				098132AA37494B68A9A03104 /* Pods-JCUtils_Tests-Expecta-Private.xcconfig */,
+				362C387B1D630AFC6416E77D /* Pods-JCUtils_Tests-Expecta-dummy.m */,
+				CF229C6B2F5688A71C397C0B /* Pods-JCUtils_Tests-Expecta-prefix.pch */,
+				56D859C483FD35CBF4ABBD17 /* Pods-JCUtils_Tests-Expecta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Pods-JCUtils_Tests-Expecta";
+			sourceTree = "<group>";
+		};
+		6678034A1B586C8400C0C08B /* Animation Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6678034B1B586CAC00C0C08B /* JCAnimationHelper.h */,
+				6678034C1B586CAC00C0C08B /* JCAnimationHelper.m */,
+			);
+			name = "Animation Utilities";
+			sourceTree = "<group>";
+		};
+		6678034F1B586CBD00C0C08B /* Date Formatters */ = {
+			isa = PBXGroup;
+			children = (
+				667803541B586CD900C0C08B /* JCFullDateFormatter.h */,
+				667803551B586CD900C0C08B /* JCFullDateFormatter.m */,
+				667803501B586CCF00C0C08B /* JCBaseDateFormatter.h */,
+				667803511B586CCF00C0C08B /* JCBaseDateFormatter.m */,
+			);
+			name = "Date Formatters";
+			sourceTree = "<group>";
+		};
+		667803581B586CDD00C0C08B /* Core Data Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				667803591B586CF600C0C08B /* JCCoreDataHelper.h */,
+				6678035A1B586CF600C0C08B /* JCCoreDataHelper.m */,
+			);
+			name = "Core Data Utilities";
+			sourceTree = "<group>";
+		};
+		6678035D1B586D2200C0C08B /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6678035E1B586D3800C0C08B /* JCSimpleArrayDataSource.h */,
+				6678035F1B586D3800C0C08B /* JCSimpleArrayDataSource.m */,
+				667803601B586D3800C0C08B /* JCSimpleSectionArrayDataSource.h */,
+				667803611B586D3800C0C08B /* JCSimpleSectionArrayDataSource.m */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		6967F6BE38285507953C4CF6 /* Pods-JCUtils_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E5670A0C0D492ADB1654E808 /* Info.plist */,
+				79C46091612D064F6E3F6323 /* Pods-JCUtils_Tests.modulemap */,
+				04CA6813BBDA698CE2232CE2 /* Pods-JCUtils_Tests-acknowledgements.markdown */,
+				354868680306B0026457A3E7 /* Pods-JCUtils_Tests-acknowledgements.plist */,
+				923326113A95194FAFE88153 /* Pods-JCUtils_Tests-dummy.m */,
+				4F2A732FC1FED289474D95E4 /* Pods-JCUtils_Tests-environment.h */,
+				EAF8F189308725CB704E906E /* Pods-JCUtils_Tests-frameworks.sh */,
+				210BEC8B976A772D6BE5DE11 /* Pods-JCUtils_Tests-resources.sh */,
+				F39FF0CA43FC13860477F2D6 /* Pods-JCUtils_Tests-umbrella.h */,
+				A80F6165AB72F1F79FAB5A73 /* Pods-JCUtils_Tests.debug.xcconfig */,
+				519C2723B2A361545E103043 /* Pods-JCUtils_Tests.release.xcconfig */,
+			);
+			name = "Pods-JCUtils_Tests";
+			path = "Target Support Files/Pods-JCUtils_Tests";
+			sourceTree = "<group>";
+		};
+		69A1D67FDB12BB71EB4727FB = {
+			isa = PBXGroup;
+			children = (
+				0E04D33286281C4FA452738E /* Podfile */,
+				EACEE1ECD59374D1A5287B9A /* Development Pods */,
+				C7D84E4AA0F37DD489D4EF69 /* Frameworks */,
+				1092DA89C52EF976229F9C1E /* Pods */,
+				6FE8C69BA72195A41D63459E /* Products */,
+				013DBAABF2FF9E01B445D86D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		6FE8C69BA72195A41D63459E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E463D3CCE9C7E2A0991D692 /* Expecta.framework */,
+				482D7509A38B5273339ADE01 /* JCUtils.bundle */,
+				CFDEE3C5BF53FAD65F7F8142 /* JCUtils.bundle */,
+				94150E6ADA36D398B35F4EE2 /* JCUtils.framework */,
+				DAB16AEF7F58B8702A627E9F /* JCUtils.framework */,
+				6101C5CEF6493630C8BEFC99 /* Pods_JCUtils_Example.framework */,
+				7287387C3E5CD2D455FE1AE9 /* Pods_JCUtils_Tests.framework */,
+				1CC5B7CDE99F2B23F3DBFE8E /* Specta.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7153C146779FE29E5412DC3C /* Pods-JCUtils_Example */ = {
+			isa = PBXGroup;
+			children = (
+				5DA92F7B0A76BCDF4D8008C8 /* Info.plist */,
+				430F8028F27F10B2ED332BF0 /* Pods-JCUtils_Example.modulemap */,
+				A58447C40E20F7CED2CF1CC5 /* Pods-JCUtils_Example-acknowledgements.markdown */,
+				F386A2A8B4BDD08125F3D512 /* Pods-JCUtils_Example-acknowledgements.plist */,
+				1EDFEDFD841491A6F6E5C1FD /* Pods-JCUtils_Example-dummy.m */,
+				CFBCAEA04F1E9CB6B3228067 /* Pods-JCUtils_Example-environment.h */,
+				9D30AF803B2BC08B5BA898EE /* Pods-JCUtils_Example-frameworks.sh */,
+				4C8D709A765D4F15ED52FBBD /* Pods-JCUtils_Example-resources.sh */,
+				495E36B91ED2A61091F5E902 /* Pods-JCUtils_Example-umbrella.h */,
+				E13201C16F75B62862FB48FA /* Pods-JCUtils_Example.debug.xcconfig */,
+				92C3A5888852C5AECDEE0AB8 /* Pods-JCUtils_Example.release.xcconfig */,
+			);
+			name = "Pods-JCUtils_Example";
+			path = "Target Support Files/Pods-JCUtils_Example";
+			sourceTree = "<group>";
+		};
+		86BBE9C4253C6E5B8685E94B /* JCUtils */ = {
+			isa = PBXGroup;
+			children = (
+				28650872699AE2411DEF4DC9 /* Pod */,
+				C46F3ED47360866258F621EE /* Support Files */,
+			);
+			name = JCUtils;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A73F017AACB0E3ACAE282E45 /* Expecta */ = {
+			isa = PBXGroup;
+			children = (
+				FF2EC6E6C516CC5BC4FA9B62 /* EXPBlockDefinedMatcher.h */,
+				EA9B25AEE47ED2140FDE5E5B /* EXPBlockDefinedMatcher.m */,
+				D0F9EBDA317EC2B78ECB7709 /* EXPDefines.h */,
+				3803E7B7CF344B55701E63DB /* EXPDoubleTuple.h */,
+				582E6DF60CBF267F499045AD /* EXPDoubleTuple.m */,
+				116BE0D626A220B2824644F1 /* EXPExpect.h */,
+				4AB70F67332675F7D9D748B3 /* EXPExpect.m */,
+				6982ECDBBC3F6D0560FAD55F /* EXPFloatTuple.h */,
+				DDCC93C83A7026AE4C167CAD /* EXPFloatTuple.m */,
+				88FFB4ABF5790378FCE5FB1A /* EXPMatcher.h */,
+				6A446B7DAB65DD10C95EB5F2 /* EXPMatcherHelpers.h */,
+				8AB5C384172445779D073768 /* EXPMatcherHelpers.m */,
+				ECC1F27E06DEC8399E39A97E /* EXPMatchers.h */,
+				8673E500ED7090E643306704 /* EXPMatchers+beCloseTo.h */,
+				D8A721A709700AA04C14C774 /* EXPMatchers+beCloseTo.m */,
+				CD2D7822CB28A75F337C3EC9 /* EXPMatchers+beFalsy.h */,
+				36BE9C4D9F3BAF995F468EA9 /* EXPMatchers+beFalsy.m */,
+				30318418C756C0D893AC6759 /* EXPMatchers+beGreaterThan.h */,
+				1CF73B8FEAEF6620A6A1DA3E /* EXPMatchers+beGreaterThan.m */,
+				C0EA3BE753DBCE09CDCC8147 /* EXPMatchers+beGreaterThanOrEqualTo.h */,
+				E39EA536A6451692A161D87D /* EXPMatchers+beGreaterThanOrEqualTo.m */,
+				50C4E79EADB41DD0A4F56FA4 /* EXPMatchers+beIdenticalTo.h */,
+				A270BCC00C5943D4A2293BBD /* EXPMatchers+beIdenticalTo.m */,
+				1E1640919539BCE872AF9FC7 /* EXPMatchers+beInTheRangeOf.h */,
+				3106EB5D931699BA7E02283B /* EXPMatchers+beInTheRangeOf.m */,
+				1665BE5726124BAE9135CD1D /* EXPMatchers+beInstanceOf.h */,
+				A867EC92235D6B8E48621049 /* EXPMatchers+beInstanceOf.m */,
+				D087EA7A0B80AA12ECF2DE0F /* EXPMatchers+beKindOf.h */,
+				AB04640B193FED7E7E846DD3 /* EXPMatchers+beKindOf.m */,
+				E9BEA71A51B4184120C01EC1 /* EXPMatchers+beLessThan.h */,
+				008022A5A9EA36818F29742C /* EXPMatchers+beLessThan.m */,
+				402365DEAE99AA9116633E37 /* EXPMatchers+beLessThanOrEqualTo.h */,
+				7E7CCECC254C8B73961DC193 /* EXPMatchers+beLessThanOrEqualTo.m */,
+				AA88193F75E0BA67C7BCF8C0 /* EXPMatchers+beNil.h */,
+				D5711724D68E81DD031D3201 /* EXPMatchers+beNil.m */,
+				85E4A365E58DAA6E6BBABFF3 /* EXPMatchers+beSubclassOf.h */,
+				9CD920800A99EB1171E2EF1E /* EXPMatchers+beSubclassOf.m */,
+				5786C5D8DB1B0EABD6752C79 /* EXPMatchers+beSupersetOf.h */,
+				A3E8F7BAD87CD184FB965A42 /* EXPMatchers+beSupersetOf.m */,
+				FE95D6278CF49A11FD693E51 /* EXPMatchers+beTruthy.h */,
+				1888C2C9384DB00CA6891D33 /* EXPMatchers+beTruthy.m */,
+				86BC59BD7A920438FB368A40 /* EXPMatchers+beginWith.h */,
+				452BADC4D109CFD32FF7339E /* EXPMatchers+beginWith.m */,
+				B8C0C2923F5AF3F2EC635008 /* EXPMatchers+conformTo.h */,
+				98EBE4D9634AC9DE0292A545 /* EXPMatchers+conformTo.m */,
+				F9C6883623DA4A4DEA135A45 /* EXPMatchers+contain.h */,
+				9E384B38200E5AC67413FAFC /* EXPMatchers+contain.m */,
+				5C71CC1D33B1BB741FB6E3CE /* EXPMatchers+endWith.h */,
+				74421E6A59C40B24E4FC3194 /* EXPMatchers+endWith.m */,
+				DC516440A54F4F72759B5022 /* EXPMatchers+equal.h */,
+				3ABAB5F11B371DA84FF3E608 /* EXPMatchers+equal.m */,
+				84960540817D62EB68CBAB6B /* EXPMatchers+haveCountOf.h */,
+				3C01FF789084741935BCCA4E /* EXPMatchers+haveCountOf.m */,
+				F8D35333AE365506C6FB53F1 /* EXPMatchers+match.h */,
+				33B6A738BF25125F39B466A3 /* EXPMatchers+match.m */,
+				D23D07D3AD7775CD858DD9BF /* EXPMatchers+postNotification.h */,
+				040C2100F60248869D48E3AF /* EXPMatchers+postNotification.m */,
+				5F5F6B004549F3C98C827F2E /* EXPMatchers+raise.h */,
+				8C18E46A5320D3C981631C61 /* EXPMatchers+raise.m */,
+				EAE5585935B9FBC5CEF86CA0 /* EXPMatchers+raiseWithReason.h */,
+				56B8B7F4FB7DB8E780D9916B /* EXPMatchers+raiseWithReason.m */,
+				7D0ED3FE59BECE2EEC5BF12A /* EXPMatchers+respondTo.h */,
+				2B5470318C281CDFB6088A2C /* EXPMatchers+respondTo.m */,
+				6168E857A99AFA6A3B0A37AE /* EXPUnsupportedObject.h */,
+				E3CA071BFFAC5647FF0D3FFC /* EXPUnsupportedObject.m */,
+				C932771EFA6A0227C1F3F361 /* Expecta.h */,
+				4F596CCE42B5EBB2594C2C51 /* ExpectaObject.h */,
+				37D3BD046109E2AD01DCB8EB /* ExpectaObject.m */,
+				4277523420183BE339282FE3 /* ExpectaSupport.h */,
+				CBCEDB4B95CE880209F1ACC1 /* ExpectaSupport.m */,
+				7A83C7A0A4F9D5C6737FFFBA /* NSObject+Expecta.h */,
+				7E62BB37E0C0D35A95C660C0 /* NSValue+Expecta.h */,
+				490B814F9E36A19B6B775829 /* NSValue+Expecta.m */,
+				550CDEE2218AC66DD48BDD74 /* Support Files */,
+			);
+			path = Expecta;
+			sourceTree = "<group>";
+		};
+		C46F3ED47360866258F621EE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C77CED81B5AC5A15F9C27D5C /* Info.plist */,
+				683BD1E04047750480BE77C7 /* Info.plist */,
+				A05041E89E56AD591A2CB513 /* Pods-JCUtils_Example-JCUtils.modulemap */,
+				C8E992F69C1D30977A50C37F /* Pods-JCUtils_Example-JCUtils.xcconfig */,
+				B0D913A37EEC52FB6147ED8E /* Pods-JCUtils_Example-JCUtils-Private.xcconfig */,
+				58491584F8377B0C1CE609B3 /* Pods-JCUtils_Example-JCUtils-dummy.m */,
+				B1789401A48054EE28B04FBA /* Pods-JCUtils_Example-JCUtils-prefix.pch */,
+				1CB9A2732CDBC642E7AF12A5 /* Pods-JCUtils_Example-JCUtils-umbrella.h */,
+				1851C4B822F8FC25B1598FAC /* Pods-JCUtils_Tests-JCUtils.modulemap */,
+				AAAAA4CE1E3A2266204DDF79 /* Pods-JCUtils_Tests-JCUtils.xcconfig */,
+				6D710FD8F450C54A07204FA9 /* Pods-JCUtils_Tests-JCUtils-Private.xcconfig */,
+				73AFDFC90D34EE232A3BFCD6 /* Pods-JCUtils_Tests-JCUtils-dummy.m */,
+				B6B8FD20EABFA401C6843915 /* Pods-JCUtils_Tests-JCUtils-prefix.pch */,
+				D30FCC47635DB53D86527575 /* Pods-JCUtils_Tests-JCUtils-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-JCUtils_Example-JCUtils";
+			sourceTree = "<group>";
+		};
+		C7D84E4AA0F37DD489D4EF69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A0D17590F7A0CAE276BCAF7 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EACEE1ECD59374D1A5287B9A /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86BBE9C4253C6E5B8685E94B /* JCUtils */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FC7B70ABBC7FBD29B9EF611E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6678035D1B586D2200C0C08B /* Data Sources */,
+				667803581B586CDD00C0C08B /* Core Data Utilities */,
+				6678034F1B586CBD00C0C08B /* Date Formatters */,
+				6678034A1B586C8400C0C08B /* Animation Utilities */,
+				6BBF97138CDC5A190D7EB65A /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2F1B852C71C3AF6468F13363 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89F8EBD990C77A26C19A16BD /* Pods-JCUtils_Tests-JCUtils-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		386942118C877FF798C4185C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8FB4689AE50359D3D9BA46D /* Pods-JCUtils_Tests-Specta-umbrella.h in Headers */,
+				B599A543F03A4808EC2C8390 /* SPTCallSite.h in Headers */,
+				F7A20C22CDDBD2A2A0B50B15 /* SPTCompiledExample.h in Headers */,
+				C18EEE7E7A197C724F962216 /* SPTExample.h in Headers */,
+				A1B6F5FFC09B383F10789B07 /* SPTExampleGroup.h in Headers */,
+				C820CEA3AFE970FFBA39CF2F /* SPTExcludeGlobalBeforeAfterEach.h in Headers */,
+				BE1F112FBE9A74DA1056727B /* SPTGlobalBeforeAfterEach.h in Headers */,
+				06517460A0D18335692162A0 /* SPTSharedExampleGroups.h in Headers */,
+				40049BCC9FB771E939D39AE3 /* SPTSpec.h in Headers */,
+				2AF88DAFA756432CD364EC46 /* SPTTestSuite.h in Headers */,
+				86CC552FC7511EFA8FE31B74 /* Specta.h in Headers */,
+				AC1B139C563AE974C09996AB /* SpectaDSL.h in Headers */,
+				C208EC6AB735E093190CF038 /* SpectaTypes.h in Headers */,
+				4EB4A17449CCE107BF0C2893 /* SpectaUtility.h in Headers */,
+				2AFCE4A5054CED9861B195D0 /* XCTest+Private.h in Headers */,
+				305BE64EF5A9361AF93ACBCB /* XCTestCase+Specta.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		413A52A544D2F099C2A5BD8D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				93DCE4613392EF414814E645 /* Pods-JCUtils_Example-JCUtils-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89B44F35C25DD833C8E6140C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F4EBDA72B64C2409855998E /* Pods-JCUtils_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E953BC506DA020CACCE94A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				202E7093AC099FDCEF16071B /* EXPBlockDefinedMatcher.h in Headers */,
+				0547BCBE2617689D10100AA7 /* EXPDefines.h in Headers */,
+				394732E5D91C12493CE933E4 /* EXPDoubleTuple.h in Headers */,
+				F3A753E8DD83F43270CC7789 /* EXPExpect.h in Headers */,
+				20394E45137C2C102D68D096 /* EXPFloatTuple.h in Headers */,
+				8BC471E0D103A8DD9B38AD39 /* EXPMatcher.h in Headers */,
+				31E8DC94FA87C1A56692391D /* EXPMatcherHelpers.h in Headers */,
+				C9AF1217BEC5D0EA565C5539 /* EXPMatchers+beCloseTo.h in Headers */,
+				B192CD4EF97DE1D482E9BC56 /* EXPMatchers+beFalsy.h in Headers */,
+				CD50CD3BF85433B831A4F9C4 /* EXPMatchers+beGreaterThan.h in Headers */,
+				2CF8A161C867F1869DB9FF4A /* EXPMatchers+beGreaterThanOrEqualTo.h in Headers */,
+				B40FB40C997B594B0391F7B0 /* EXPMatchers+beIdenticalTo.h in Headers */,
+				B7C7B5D2A02233BB1FD34EE2 /* EXPMatchers+beInTheRangeOf.h in Headers */,
+				F6DBC6086DBA6E9FD49E7999 /* EXPMatchers+beInstanceOf.h in Headers */,
+				060B80F326B4BD8E8B26F083 /* EXPMatchers+beKindOf.h in Headers */,
+				DA677CC2CAD42B3A4BF10653 /* EXPMatchers+beLessThan.h in Headers */,
+				5928658322C22143EB6BDF41 /* EXPMatchers+beLessThanOrEqualTo.h in Headers */,
+				1CBAF2B9A3DF29A6346376A7 /* EXPMatchers+beNil.h in Headers */,
+				2B4AF6DE165724B8094E6315 /* EXPMatchers+beSubclassOf.h in Headers */,
+				A9C3C6337139849BBC67758F /* EXPMatchers+beSupersetOf.h in Headers */,
+				58E5B0458EBF2B0C531E7E91 /* EXPMatchers+beTruthy.h in Headers */,
+				028038F96C45D8025E4B10E8 /* EXPMatchers+beginWith.h in Headers */,
+				A67033FF9EF69113E6721FB2 /* EXPMatchers+conformTo.h in Headers */,
+				CB4C5824E8CACD9A07F1584B /* EXPMatchers+contain.h in Headers */,
+				803F1E51C99FB657E6B65A78 /* EXPMatchers+endWith.h in Headers */,
+				6174DF7E9DF98C0DD434A9A3 /* EXPMatchers+equal.h in Headers */,
+				8E5D47FE1E923D5AFD3C34A7 /* EXPMatchers+haveCountOf.h in Headers */,
+				302CDC173A0268C2E8CA2097 /* EXPMatchers+match.h in Headers */,
+				3AB90A59E7D62D4B8B97D5F9 /* EXPMatchers+postNotification.h in Headers */,
+				9F5605D62CCCA9D5A5B1DA8C /* EXPMatchers+raise.h in Headers */,
+				AA520A616F64A359BC56004D /* EXPMatchers+raiseWithReason.h in Headers */,
+				EAC325DCFA2F13093B673822 /* EXPMatchers+respondTo.h in Headers */,
+				971EA72F72F5D5B472E4470F /* EXPMatchers.h in Headers */,
+				ABD106BAD00F7DD8FE466993 /* EXPUnsupportedObject.h in Headers */,
+				22B45EB4F24839550AA411F7 /* Expecta.h in Headers */,
+				76C58911557F572E17E2602E /* ExpectaObject.h in Headers */,
+				A2DE1B7ABA651986A93084C3 /* ExpectaSupport.h in Headers */,
+				52DDC9D6C8876693896E1D1D /* NSObject+Expecta.h in Headers */,
+				103BEBC0FC62FE01EC7A41C7 /* NSValue+Expecta.h in Headers */,
+				3DB62FF510633DFBBD60B5A1 /* Pods-JCUtils_Tests-Expecta-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D53E541FE288836F6BFB3364 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				667803621B586D3800C0C08B /* JCSimpleArrayDataSource.h in Headers */,
+				6678034D1B586CAC00C0C08B /* JCAnimationHelper.h in Headers */,
+				667803641B586D3800C0C08B /* JCSimpleSectionArrayDataSource.h in Headers */,
+				667803561B586CD900C0C08B /* JCFullDateFormatter.h in Headers */,
+				BC1162BA7C4076003C07BFC7 /* Pods-JCUtils_Example-umbrella.h in Headers */,
+				667803521B586CCF00C0C08B /* JCBaseDateFormatter.h in Headers */,
+				6678035B1B586CF600C0C08B /* JCCoreDataHelper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		40FBDB720140C89A922638B9 /* Pods-JCUtils_Tests-Expecta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B56F7F3EC40D61C87EE0D59 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests-Expecta" */;
+			buildPhases = (
+				BF66A99F2A10D49D6C03B4F5 /* Sources */,
+				3387AA1D3137AD1AFAC5057E /* Frameworks */,
+				B7E953BC506DA020CACCE94A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JCUtils_Tests-Expecta";
+			productName = "Pods-JCUtils_Tests-Expecta";
+			productReference = 6E463D3CCE9C7E2A0991D692 /* Expecta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		43F03DCC179432B5889B57DD /* Pods-JCUtils_Tests-JCUtils-JCUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB6C0AA208C27CFDFD14E5A8 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests-JCUtils-JCUtils" */;
+			buildPhases = (
+				21CF3DF428E98E753F181F20 /* Sources */,
+				55CFB6B1103D7EAA01B90972 /* Frameworks */,
+				DACF371A138B60B9ABEFF32F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JCUtils_Tests-JCUtils-JCUtils";
+			productName = "Pods-JCUtils_Tests-JCUtils-JCUtils";
+			productReference = CFDEE3C5BF53FAD65F7F8142 /* JCUtils.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5E7D84BBA3E9C3DBB2D80F42 /* Pods-JCUtils_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDA3589A8C4B5207A529B9CE /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests" */;
+			buildPhases = (
+				41838920E085801D32074E8E /* Sources */,
+				F0156200A91272A700D697AA /* Frameworks */,
+				89B44F35C25DD833C8E6140C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB073CF43C1A3B05F6D36D4B /* PBXTargetDependency */,
+				893EAA45929D3F6C78030A03 /* PBXTargetDependency */,
+				18FD9995E7251760C6B2F51D /* PBXTargetDependency */,
+			);
+			name = "Pods-JCUtils_Tests";
+			productName = "Pods-JCUtils_Tests";
+			productReference = 7287387C3E5CD2D455FE1AE9 /* Pods_JCUtils_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6DFD0E640F4E0525DB6CCF04 /* Pods-JCUtils_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B130CB0AE2B4976A0C072A7 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Example" */;
+			buildPhases = (
+				F1A35EB5E4CAA889B79C79E5 /* Sources */,
+				11DFAA8D55513A55FF00871D /* Frameworks */,
+				D53E541FE288836F6BFB3364 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1A5CC869907BB6E659FA8E31 /* PBXTargetDependency */,
+			);
+			name = "Pods-JCUtils_Example";
+			productName = "Pods-JCUtils_Example";
+			productReference = 6101C5CEF6493630C8BEFC99 /* Pods_JCUtils_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		961FAC0B7A66694E3EEED70D /* Pods-JCUtils_Tests-JCUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E3D8C5E45BD972ED4AA328C /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests-JCUtils" */;
+			buildPhases = (
+				C012F4808198535B37577498 /* Sources */,
+				DE7C5C93D8D06B032FA5D64E /* Frameworks */,
+				4C94681656F460D26955DE35 /* Resources */,
+				2F1B852C71C3AF6468F13363 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1976126B837D2C2457E9D0E7 /* PBXTargetDependency */,
+			);
+			name = "Pods-JCUtils_Tests-JCUtils";
+			productName = "Pods-JCUtils_Tests-JCUtils";
+			productReference = DAB16AEF7F58B8702A627E9F /* JCUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B2C521479BD8007BBD994BC0 /* Pods-JCUtils_Example-JCUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0A5A270327BEFE609314192 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Example-JCUtils" */;
+			buildPhases = (
+				8491DE1E2867AB37215B60BF /* Sources */,
+				7815AD8D25991E01DC16FD13 /* Frameworks */,
+				CCFC916ADC790D396FCB427D /* Resources */,
+				413A52A544D2F099C2A5BD8D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5A3E5723C9613E705A75296 /* PBXTargetDependency */,
+			);
+			name = "Pods-JCUtils_Example-JCUtils";
+			productName = "Pods-JCUtils_Example-JCUtils";
+			productReference = 94150E6ADA36D398B35F4EE2 /* JCUtils.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B64ADF7AD0C8A21441CFC0BD /* Pods-JCUtils_Tests-Specta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CFD587B2E47E0C1EEE76F6F /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests-Specta" */;
+			buildPhases = (
+				A5EA72B81512A6760FC74451 /* Sources */,
+				502A045E7A9499CC17C5A90D /* Frameworks */,
+				386942118C877FF798C4185C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JCUtils_Tests-Specta";
+			productName = "Pods-JCUtils_Tests-Specta";
+			productReference = 1CC5B7CDE99F2B23F3DBFE8E /* Specta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F2937FD9EFCA5EC1C4C1EAB8 /* Pods-JCUtils_Example-JCUtils-JCUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8405329D264C2D330F9B78C2 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Example-JCUtils-JCUtils" */;
+			buildPhases = (
+				3561074ED7435CF4ED5031A9 /* Sources */,
+				C4A2D2F5B3B5C794D801A7F6 /* Frameworks */,
+				05AD6173C5F936304E24B7FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JCUtils_Example-JCUtils-JCUtils";
+			productName = "Pods-JCUtils_Example-JCUtils-JCUtils";
+			productReference = 482D7509A38B5273339ADE01 /* JCUtils.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E1ABBAC47D9C168860B91C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = E91977EF38B786B1111639F1 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 69A1D67FDB12BB71EB4727FB;
+			productRefGroup = 6FE8C69BA72195A41D63459E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DFD0E640F4E0525DB6CCF04 /* Pods-JCUtils_Example */,
+				B2C521479BD8007BBD994BC0 /* Pods-JCUtils_Example-JCUtils */,
+				F2937FD9EFCA5EC1C4C1EAB8 /* Pods-JCUtils_Example-JCUtils-JCUtils */,
+				5E7D84BBA3E9C3DBB2D80F42 /* Pods-JCUtils_Tests */,
+				40FBDB720140C89A922638B9 /* Pods-JCUtils_Tests-Expecta */,
+				961FAC0B7A66694E3EEED70D /* Pods-JCUtils_Tests-JCUtils */,
+				43F03DCC179432B5889B57DD /* Pods-JCUtils_Tests-JCUtils-JCUtils */,
+				B64ADF7AD0C8A21441CFC0BD /* Pods-JCUtils_Tests-Specta */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		05AD6173C5F936304E24B7FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C94681656F460D26955DE35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E49C995B5C0CAB3043226468 /* JCUtils.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCFC916ADC790D396FCB427D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70F04345714170FFEA2348C /* JCUtils.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DACF371A138B60B9ABEFF32F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21CF3DF428E98E753F181F20 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3561074ED7435CF4ED5031A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41838920E085801D32074E8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A88BDD76E1265D9E81353E /* Pods-JCUtils_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8491DE1E2867AB37215B60BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82F41D4BF4EFECE288A08CA2 /* Pods-JCUtils_Example-JCUtils-dummy.m in Sources */,
+				350BB82D36DD0961AF4BF779 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5EA72B81512A6760FC74451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D680D0B961F135690796AF /* Pods-JCUtils_Tests-Specta-dummy.m in Sources */,
+				1B0D445CBDA7D883384E82C2 /* SPTCallSite.m in Sources */,
+				1976A36CD6558F7929A4A94B /* SPTCompiledExample.m in Sources */,
+				B9215962F8DF7CEE54FB9269 /* SPTExample.m in Sources */,
+				5541EF00E826AB8996AA639F /* SPTExampleGroup.m in Sources */,
+				287F72670766E100A14B65DF /* SPTSharedExampleGroups.m in Sources */,
+				16F5F28B75C43F5F77EBEFD8 /* SPTSpec.m in Sources */,
+				F41321BF08E47293CAF08300 /* SPTTestSuite.m in Sources */,
+				0FB099C683B66B73A6173C9D /* SpectaDSL.m in Sources */,
+				A341A92FA3F65338BBF88C1B /* SpectaUtility.m in Sources */,
+				C690D83A8DE56A548E1D9E94 /* XCTestCase+Specta.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF66A99F2A10D49D6C03B4F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A185FAF651A821CD44886E6 /* EXPBlockDefinedMatcher.m in Sources */,
+				25A93CC77114EBBC4FEB4ABE /* EXPDoubleTuple.m in Sources */,
+				578AC8DB867D81E2D0B7DDD0 /* EXPExpect.m in Sources */,
+				2764CB4D23525884456198F0 /* EXPFloatTuple.m in Sources */,
+				3BBBD8E1001BBF171B57BD56 /* EXPMatcherHelpers.m in Sources */,
+				9A27DDA6DBBBF9C21F2C99EA /* EXPMatchers+beCloseTo.m in Sources */,
+				620FDBE8A82FDC3CA4460D95 /* EXPMatchers+beFalsy.m in Sources */,
+				5AAA466DEE758B69C4FAFD6D /* EXPMatchers+beGreaterThan.m in Sources */,
+				C443EFB472E6C2B6D4C5987E /* EXPMatchers+beGreaterThanOrEqualTo.m in Sources */,
+				5C76626F837D50C8E260C762 /* EXPMatchers+beIdenticalTo.m in Sources */,
+				A5897F6CB3AAEE55244D9FD2 /* EXPMatchers+beInTheRangeOf.m in Sources */,
+				F12ECB45E28354D790E5DE4D /* EXPMatchers+beInstanceOf.m in Sources */,
+				7D67C018F5AC15567D676F8C /* EXPMatchers+beKindOf.m in Sources */,
+				8A01CE6D62ACA8ADA7E290C0 /* EXPMatchers+beLessThan.m in Sources */,
+				00A14AAE0C386ACFA24A5374 /* EXPMatchers+beLessThanOrEqualTo.m in Sources */,
+				59C2B7EC6ECDADABE43E6A95 /* EXPMatchers+beNil.m in Sources */,
+				6753CE342B3E770048F96A3B /* EXPMatchers+beSubclassOf.m in Sources */,
+				7B56F2D32B029ED11B8A1128 /* EXPMatchers+beSupersetOf.m in Sources */,
+				0A95780FB72E2D77C1825D10 /* EXPMatchers+beTruthy.m in Sources */,
+				2A4DC07CCF3DFFBA7AC28410 /* EXPMatchers+beginWith.m in Sources */,
+				D67223B88473EE544E182CB6 /* EXPMatchers+conformTo.m in Sources */,
+				E8AF6F22F675F848AC13DC4F /* EXPMatchers+contain.m in Sources */,
+				3C9D2F64E97D81A46E568EF4 /* EXPMatchers+endWith.m in Sources */,
+				A9C2A5C2335DC1038ED639D3 /* EXPMatchers+equal.m in Sources */,
+				88BDA1EBE95E8286642D6EC6 /* EXPMatchers+haveCountOf.m in Sources */,
+				1BA8828AF8B0D6A4D3545213 /* EXPMatchers+match.m in Sources */,
+				35EC3974BE8C7746BC282909 /* EXPMatchers+postNotification.m in Sources */,
+				AD284BF2300428DD2F5071D4 /* EXPMatchers+raise.m in Sources */,
+				227392526C6761841B5C1AB6 /* EXPMatchers+raiseWithReason.m in Sources */,
+				502AE2C654FFC0738BC8EC03 /* EXPMatchers+respondTo.m in Sources */,
+				56BA92571F2DDED3AD78628A /* EXPUnsupportedObject.m in Sources */,
+				FA5BDAD3FC8251966332F0BA /* ExpectaObject.m in Sources */,
+				8E51C49E6CC04B6EE5E45C76 /* ExpectaSupport.m in Sources */,
+				CB003B10FE3F54BE66B0D96E /* NSValue+Expecta.m in Sources */,
+				3178D94A603C6B9C30F2F4D9 /* Pods-JCUtils_Tests-Expecta-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C012F4808198535B37577498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E48922DAD97034A8D8952B5 /* Pods-JCUtils_Tests-JCUtils-dummy.m in Sources */,
+				497906BB1530274FEB6FE4BA /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1A35EB5E4CAA889B79C79E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B8C2A450B256D30AFB644D /* Pods-JCUtils_Example-dummy.m in Sources */,
+				6678034E1B586CAC00C0C08B /* JCAnimationHelper.m in Sources */,
+				667803571B586CD900C0C08B /* JCFullDateFormatter.m in Sources */,
+				667803631B586D3800C0C08B /* JCSimpleArrayDataSource.m in Sources */,
+				667803531B586CCF00C0C08B /* JCBaseDateFormatter.m in Sources */,
+				667803651B586D3800C0C08B /* JCSimpleSectionArrayDataSource.m in Sources */,
+				6678035C1B586CF600C0C08B /* JCCoreDataHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18FD9995E7251760C6B2F51D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCUtils_Tests-Specta";
+			target = B64ADF7AD0C8A21441CFC0BD /* Pods-JCUtils_Tests-Specta */;
+			targetProxy = 99EDB57FF6DE6F36C8461FCF /* PBXContainerItemProxy */;
+		};
+		1976126B837D2C2457E9D0E7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCUtils_Tests-JCUtils-JCUtils";
+			target = 43F03DCC179432B5889B57DD /* Pods-JCUtils_Tests-JCUtils-JCUtils */;
+			targetProxy = BFC7055157B4D3F653C476EF /* PBXContainerItemProxy */;
+		};
+		1A5CC869907BB6E659FA8E31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCUtils_Example-JCUtils";
+			target = B2C521479BD8007BBD994BC0 /* Pods-JCUtils_Example-JCUtils */;
+			targetProxy = 1AA9EA42A0EC00E70A97CBEA /* PBXContainerItemProxy */;
+		};
+		893EAA45929D3F6C78030A03 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCUtils_Tests-JCUtils";
+			target = 961FAC0B7A66694E3EEED70D /* Pods-JCUtils_Tests-JCUtils */;
+			targetProxy = 7075344CEB13E92D3A1CBD1C /* PBXContainerItemProxy */;
+		};
+		F5A3E5723C9613E705A75296 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCUtils_Example-JCUtils-JCUtils";
+			target = F2937FD9EFCA5EC1C4C1EAB8 /* Pods-JCUtils_Example-JCUtils-JCUtils */;
+			targetProxy = EA921BCDF8F40B15E1543D04 /* PBXContainerItemProxy */;
+		};
+		FB073CF43C1A3B05F6D36D4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JCUtils_Tests-Expecta";
+			target = 40FBDB720140C89A922638B9 /* Pods-JCUtils_Tests-Expecta */;
+			targetProxy = FC499D4B950DBA2E72EC3B5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0984A4AB92819A25CD255A0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42A34246A0D71BFB9A26FBA /* Pods-JCUtils_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCUtils_Tests-Specta/Pods-JCUtils_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Tests-Specta/Pods-JCUtils_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0FBA80BD53B1DBC6E121AF7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D710FD8F450C54A07204FA9 /* Pods-JCUtils_Tests-JCUtils-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JCUtils_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		16D0CC80385B2AD4C9DED4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42A34246A0D71BFB9A26FBA /* Pods-JCUtils_Tests-Specta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCUtils_Tests-Specta/Pods-JCUtils_Tests-Specta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Tests-Specta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Tests-Specta/Pods-JCUtils_Tests-Specta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Specta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2F368EC4A45F379AF4012B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D710FD8F450C54A07204FA9 /* Pods-JCUtils_Tests-JCUtils-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Tests-JCUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JCUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		30A3B5F946562DA5960B3EBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D913A37EEC52FB6147ED8E /* Pods-JCUtils_Example-JCUtils-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCUtils_Example-JCUtils/Pods-JCUtils_Example-JCUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Example-JCUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Example-JCUtils/Pods-JCUtils_Example-JCUtils.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JCUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32109723591837A2BB907963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098132AA37494B68A9A03104 /* Pods-JCUtils_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCUtils_Tests-Expecta/Pods-JCUtils_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Tests-Expecta/Pods-JCUtils_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		37A1D76CB7D640B5D72F594E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80F6165AB72F1F79FAB5A73 /* Pods-JCUtils_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Tests/Pods-JCUtils_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JCUtils_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5C0F74B49B784881EB714C7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92C3A5888852C5AECDEE0AB8 /* Pods-JCUtils_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Example/Pods-JCUtils_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JCUtils_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6BB00D51A1D2CB1F9521207D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E13201C16F75B62862FB48FA /* Pods-JCUtils_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Example/Pods-JCUtils_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JCUtils_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7352400626B6A52829EAAC92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8CAB69338F9FACD413F0AD0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 519C2723B2A361545E103043 /* Pods-JCUtils_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Tests/Pods-JCUtils_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JCUtils_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90B8B2F3B83D764FD81C691C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D913A37EEC52FB6147ED8E /* Pods-JCUtils_Example-JCUtils-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCUtils_Example-JCUtils/Pods-JCUtils_Example-JCUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Example-JCUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Example-JCUtils/Pods-JCUtils_Example-JCUtils.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JCUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADB3DD46E4D0A818093F0410 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B5B0EDD4EE6A07DDF8111EFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D710FD8F450C54A07204FA9 /* Pods-JCUtils_Tests-JCUtils-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JCUtils_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		E528185BD9BB3C9284CE315B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D710FD8F450C54A07204FA9 /* Pods-JCUtils_Tests-JCUtils-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Tests-JCUtils/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Tests-JCUtils/Pods-JCUtils_Tests-JCUtils.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JCUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E53789DC3BE5BC7ABCA15052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 098132AA37494B68A9A03104 /* Pods-JCUtils_Tests-Expecta-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JCUtils_Tests-Expecta/Pods-JCUtils_Tests-Expecta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JCUtils_Tests-Expecta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JCUtils_Tests-Expecta/Pods-JCUtils_Tests-Expecta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Expecta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FA3CD6448BEF57E2AE263B36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D913A37EEC52FB6147ED8E /* Pods-JCUtils_Example-JCUtils-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JCUtils_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		FAA05D3CD608A315DA25553A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0D913A37EEC52FB6147ED8E /* Pods-JCUtils_Example-JCUtils-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JCUtils_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JCUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CFD587B2E47E0C1EEE76F6F /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests-Specta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0984A4AB92819A25CD255A0E /* Debug */,
+				16D0CC80385B2AD4C9DED4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B56F7F3EC40D61C87EE0D59 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests-Expecta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32109723591837A2BB907963 /* Debug */,
+				E53789DC3BE5BC7ABCA15052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B130CB0AE2B4976A0C072A7 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6BB00D51A1D2CB1F9521207D /* Debug */,
+				5C0F74B49B784881EB714C7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8405329D264C2D330F9B78C2 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Example-JCUtils-JCUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA3CD6448BEF57E2AE263B36 /* Debug */,
+				FAA05D3CD608A315DA25553A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E3D8C5E45BD972ED4AA328C /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests-JCUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F368EC4A45F379AF4012B84 /* Debug */,
+				E528185BD9BB3C9284CE315B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A0A5A270327BEFE609314192 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Example-JCUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90B8B2F3B83D764FD81C691C /* Debug */,
+				30A3B5F946562DA5960B3EBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB6C0AA208C27CFDFD14E5A8 /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests-JCUtils-JCUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5B0EDD4EE6A07DDF8111EFD /* Debug */,
+				0FBA80BD53B1DBC6E121AF7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDA3589A8C4B5207A529B9CE /* Build configuration list for PBXNativeTarget "Pods-JCUtils_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37A1D76CB7D640B5D72F594E /* Debug */,
+				8CAB69338F9FACD413F0AD0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E91977EF38B786B1111639F1 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADB3DD46E4D0A818093F0410 /* Debug */,
+				7352400626B6A52829EAAC92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E1ABBAC47D9C168860B91C9 /* Project object */;
+}
