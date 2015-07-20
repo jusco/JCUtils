@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B2C521479BD8007BBD994BC0"
+               BlueprintIdentifier = "3BC4365850FFBB6C0B78A659"
                BuildableName = "JCUtils.framework"
                BlueprintName = "Pods-JCUtils_Example-JCUtils"
                ReferencedContainer = "container:Pods.xcodeproj">
