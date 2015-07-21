@@ -25,6 +25,16 @@
     return nil;
 }
 
+- (instancetype)initWithModelName:(NSString *)modelName
+{
+    self = [self init];
+    if (self) {
+        self.modelName = modelName;
+        return self;
+    }
+    return nil;
+}
+
 - (void)dealloc
 {
     [self unregister];
@@ -41,7 +51,7 @@
 }
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "justin.SetItOff" in the application's documents directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named by the app bundle id in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
@@ -50,7 +60,8 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"SetItOff" withExtension:@"momd"];
+    NSAssert(self.modelName, @"Model Name must exist in order to create Managed Object Model");
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:self.modelName withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -61,10 +72,13 @@
         return _persistentStoreCoordinator;
     }
     
+    NSAssert(self.modelName, @"Model Name must exist in order to create Persistent Store Coordinator");
+    
     // Create the coordinator and store
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"SetItOff.sqlite"];
+    NSString *pathName = [NSString stringWithFormat:@"%@.sqlite", self.modelName];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:pathName];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {

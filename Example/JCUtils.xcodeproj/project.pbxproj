@@ -22,6 +22,7 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		661C83601B5D20BD002EC252 /* JCFullDateFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 661C835F1B5D20BD002EC252 /* JCFullDateFormatterTests.m */; };
 		665B850A1B5DB503003B624E /* JCBaseDateFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 665B85091B5DB503003B624E /* JCBaseDateFormatterTests.m */; };
+		665B850D1B5E635B003B624E /* JCCoreDataHelperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 665B850C1B5E635B003B624E /* JCCoreDataHelperTests.m */; };
 		837BB6404B73B32DC006F142 /* Pods_JCUtils_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 717202E69A55AF6BF9532EE7 /* Pods_JCUtils_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BFA6F6D9F726C4748BA65949 /* Pods_JCUtils_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F6650F50CDC2682CEFFE06 /* Pods_JCUtils_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -67,6 +68,7 @@
 		665B85051B5DADEE003B624E /* Pods_JCUtils_Example.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_JCUtils_Example.framework; path = "Pods/../build/Debug-iphoneos/Pods_JCUtils_Example.framework"; sourceTree = "<group>"; };
 		665B85071B5DADFD003B624E /* JCUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JCUtils.framework; path = "Pods/../build/Debug-iphoneos/Pods-JCUtils_Example/JCUtils.framework"; sourceTree = "<group>"; };
 		665B85091B5DB503003B624E /* JCBaseDateFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBaseDateFormatterTests.m; sourceTree = "<group>"; };
+		665B850C1B5E635B003B624E /* JCCoreDataHelperTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCoreDataHelperTests.m; sourceTree = "<group>"; };
 		717202E69A55AF6BF9532EE7 /* Pods_JCUtils_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83F6650F50CDC2682CEFFE06 /* Pods_JCUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JCUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				665B850B1B5E60FA003B624E /* Core Data */,
 				661C835E1B5D208F002EC252 /* Date Formatters */,
 				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
@@ -209,6 +212,14 @@
 				661C835F1B5D20BD002EC252 /* JCFullDateFormatterTests.m */,
 			);
 			name = "Date Formatters";
+			sourceTree = "<group>";
+		};
+		665B850B1B5E60FA003B624E /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				665B850C1B5E635B003B624E /* JCCoreDataHelperTests.m */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -419,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				661C83601B5D20BD002EC252 /* JCFullDateFormatterTests.m in Sources */,
+				665B850D1B5E635B003B624E /* JCCoreDataHelperTests.m in Sources */,
 				665B850A1B5DB503003B624E /* JCBaseDateFormatterTests.m in Sources */,
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
 			);
